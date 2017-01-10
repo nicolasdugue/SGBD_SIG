@@ -8,5 +8,6 @@
 		<sp:practUc sc:refUri="/Exercice/RAB_Veilletechno.xml"/>
 		<sp:practUc sc:refUri="/Exercice/RAB_EtudeMarche.xml"/>
 		<sp:practUc sc:refUri="/Exercice/RAB_RadarsAutomatiques.xml"/>
+		<sp:practUc sc:refUri="/Exercice/RAB_Label.xml"/>
 	</op:courseUa>
 </sc:item>

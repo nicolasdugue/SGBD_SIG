@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Label Loud Records</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">(<sc:inlineStyle role="emp">Des références hip hop se sont glissés dans le texte, saurez vous les retrouver ?</sc:inlineStyle>)</sc:para>
+						<sc:para xml:space="preserve">Repreneur du label Loud Records, vous avez pour mission de relancer ce label autrefois prestigieux. En effet, à l'aube de l'an 2000, c'est plus le même deal. Avec le succès du hip hop, le domaine de la production musicale est devenue très compétitif : Survival of the fittest. Vous entendez ainsi vous doter d'un système d'information digne du game afin d'optimiser la gestion du label : artistes, marketing, gestion commerciale, relations presse.</sc:para>
+						<sc:para xml:space="preserve">Dotée de votre technique immortelle, vous vous lancez dans la conception du système d'information.</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">L'enregistrement.</sc:inlineStyle> Chaque artiste est accompagné par le label durant son processus de création. Lorsqu'il souhaite produire un disque, il contacte le label avec ses besoins, et le label lui assigne un producteur, un studio et des fonds. Pour le moment, tout ceci est déterminé à la main par le gestionnaire, mais le futur système d'information doit permettre au gestionnaire de rentrer la description des artistes, leurs besoins pour l'album, et en fonction de leur volume de vente précédents, des disponibilités des producteurs et des studios de faire l'assignation des moyens d'enregistrement.</sc:para>
+						<sc:para xml:space="preserve">Une fois l'album enregistré, le système l'affecte à un studio de mixage, puis de mastering. En fonction des fonds restants, du niveau de qualité de l'album estimé par le gestionnaire, l'album est envoyé au pressage avec un nombre d'albums à presser.</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">La promo.</sc:inlineStyle> Durant tout le processus d'enregistrement et de production, le service commercial et le marketing discutent ensemble des décisions à prendre pour la promotion du futur album. Ils utilisent dans un premier temps le système d'information pour extraire une liste de médias fidèles au groupe capables de relayer l'info d'un enregistrement en cours. Si c'est la Première consultation du système concernant l'artiste, alors la liste extraite sera constituée de médias fidèles au label. Ensuite, une fois la version brute (avant mixage) de l'album reçu, ils relancent les médias déjà contactés avec des extraits choisis. Une fois le mixage terminé, il s'agit de prévoir la distribution de l'album. Ils extraient donc du système une liste de boutiques, boutiques numériques et de circuit de distribution adaptés au style du groupe, et leur envoient des propositions commerciales. Si les propositions commerciales sont acceptées, les albums seront acheminés aux vendeurs après le pressage. Dans le cas contraire, celles-ci peuvent être renégociées mais il est nécessaire que chaque renégociation soit Validée par la gestionnaire.</sc:para>
+						<sc:para xml:space="preserve">Une fois l'album pressé, il est également envoyé de façon large aux radios, magazines, les Média Indépendants pour l'Autoproduit (MIA) et les médias généralistes susceptibles de relayer la sortie de l'album et d'en faire la promotion. En fonction des informations liées à l'artiste, cette liste est extraite automatiquement du système.</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Les ventes.</sc:inlineStyle> A partir de sa mise en vente dans les circuits de distribution, le label reçoit des vendeurs des informations hebdomadaires sur les ventes. Les vendeurs peuvent également faire des demandes de réapprovisionnement auprès du label. En fonction du stock et du succès (U.O.E.N.O.) de l'album, le label peut décider un repressage de l'album dont le nombre d'unités est défini à l'aide du système d'aide à la décision du système d'information.</sc:para>
+						<sc:para xml:space="preserve">Une fois l'album épuisé, vous êtes le nouveau D.U.C., veni vidi vici.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Décrire le système d'information de l'entreprise en création en utilisant :</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs diagrammes de flux ;</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs MCT ;</sc:para>
+								<sc:para xml:space="preserve">-Un MLDR pour représenter une base de données capables de stocker les informations échangées dans l'entreprise.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Consignes supplémentaires :</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Si vous avez tendance à bloquer, vous n'êtes pas tout seul.</sc:para>
+								<sc:para xml:space="preserve">Vous avez 2 heures, mais rien de sert de courir, comme Petit Frère.</sc:para>
+								<sc:para xml:space="preserve">***** les clones donc il est interdit de copier sur son voisin.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>
