@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Pour les plus rapides : exercices supplémentaires</sp:title>
+			<sp:sTitle>Exercices supplémentaires</sp:sTitle>
+		</op:uM>
+		<sp:practUc sc:refUri="/Exercice/RAB_Veilletechno.xml"/>
+		<sp:practUc sc:refUri="/Exercice/RAB_EtudeMarche.xml"/>
+		<sp:practUc sc:refUri="/Exercice/RAB_RadarsAutomatiques.xml"/>
+	</op:courseUa>
+</sc:item>

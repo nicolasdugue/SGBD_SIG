@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Le Diagramme de Contexte</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Au niveau conceptuel, la modélisation des flux permet la représentation des mouvements de données à l'intérieur d'un système d'information et entre le système et le monde extérieur. </sc:para>
+								<sc:para xml:space="preserve">On distingue deux niveaux de représentation :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">- le modèle (ou diagramme) de context</sc:inlineStyle>e ;</sc:para>
+								<sc:para xml:space="preserve">- les modèles (ou diagramme) de flux conceptuel qui affinent par étape le modèle de contexte.</sc:para>
+								<sc:para xml:space="preserve">Cette décomposition permet, par affinements successifs, d'obtenir des sous systèmes formalisant les flux d'informations.</sc:para>
+								<sc:para xml:space="preserve">On s'intéresse das cette section au diagramme de contexte.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Le modèle de contexte met en évidence, à un niveau très général, les flux d'information échangés entre des acteurs externes, un domaine d'étude et des domaines connexes.</sc:para>
+										<sc:para xml:space="preserve">Les concepts:</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Le domaine d'étude</sc:inlineStyle> : Il représente une partie du système d'information regroupant un ensemble d'activités réalisées par des acteurs internes. On étudie un seul domaine à la fois (le domaine d'étude) de manière à mieux le cerner et dans un souci de clarté du modèle. Il est délimité par les domaines connexes et les acteurs externes. Exemple : La gestion des ventes.</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Les acteurs externes</sc:inlineStyle> sont des sources ou destinations de flux de données. Ils sont situés en dehors du domaine d'étude et/ou à l'extérieur de l'organisation.</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Les acteurs internes</sc:inlineStyle> sont des sources ou destinations de flux de données. Ils sont situés dans le domaine d'étude.</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Les domaines connexes</sc:inlineStyle> sont les autres composantes du système d'information et interagissent avec le domaine d'étude. Ils correspondent aux autres domaines d'activités de l'entreprise. Ils ne sont représentés que s'ils échangent des informations avec le domaine d'étude.</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Les flux de données</sc:inlineStyle> : Ils représentent l'échange d'informations entre le domaine d'étude et une composante extérieure ou entre deux activités du domaine (flux internes et externes).</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/diagContexte1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:ex>
+					<op:pbTi/>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">&quot;Lorsque la secrétaire commerciale reçoit une commande, elle vérifie d'abord si le client n'est pas en litige. Si la commande est en litige, elle la remet au service contentieux. Dans le cas contraire elle contrôle les coordonnées du client et les met à jour. Au besoin, elle crée un compte pour les nouveaux clients. Elle vérifie la commande et saisit ensuite le bon de commande et l'imprime pour le remettre au service des expéditions. &quot; </sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/diagContexte2.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:ex>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

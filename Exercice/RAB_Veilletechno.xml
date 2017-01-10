@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Veille économique et technologique</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">En tant qu'expert en audit, vous intervenez pour rationnaliser les processus d'une société qui travaille dans le domaine de la veille économique et technologique. Celle-ci fait appel à vous pour représenter ces processus, les analyser et assister à la refonte du système d'information.</sc:para>
+						<sc:para xml:space="preserve">L'entreprise de veille souhaite que vous interveniez sur le module de création de newsletter d'information personnalisées (exemple de <sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>http://www.developpement-durable.gouv.fr/IMG/pdf/Bull_06_2015.pdf</sp:url></op:urlM>bulletin de veille</sc:phrase> du COMMISSARIAT GENERAL AU DEVELOPPEMENT DURABLE). Pour cela, il vous est fourni un cahier des charges décrivant le processus dans ses grandes lignes et notamment les interactions entre les différents service et le logiciel de veille de l'entreprise :</sc:para>
+						<sc:para xml:space="preserve">La société spécialisée dans la veille technologique, économique et concurrentielle crée des newsletter d'information à destination de ses clients. Ces newsletter sont l'occasion de leur fournir une synthèse des nouveautés ciblées sur le coeur d'activité des clients, ce qui permet à ces clients de se tenir à jour sur les découvertes scientifiques, les évolutions de la concurrence et les changements économiques.</sc:para>
+						<sc:para xml:space="preserve">Le service commercial, en charge de la prospection des clients établit les besoins des clients en terme d'information et les transmet aux service documentaire et de veille.</sc:para>
+						<sc:para xml:space="preserve">Le service de veille établit une liste de flux d'information issus de différentes sources : magazines web d'information, cotations boursières, bases de brevets scientifiques comme l'INPI, bulletins de veille. Le service informatique renseigne cette liste dans le logiciel de veille qui collecte quotidiennement et automatiquement les données issues de ces sources d'information et les organise dans le système de veille sous forme de documents (articles, brèves, données numériques).</sc:para>
+						<sc:para xml:space="preserve">Le service documentaire indexe chacun des documents collectés dans le logiciel de veille en les associant à des mot-clés comme <sc:inlineStyle role="quote">nasdaq</sc:inlineStyle>, <sc:inlineStyle role="quote">énergies renouvelables</sc:inlineStyle>, <sc:inlineStyle role="quote">intelligence artificielle</sc:inlineStyle>. Le service documentaire maintient donc une liste de mot-clés dans le logiciel de veille qui lui permet de tagger les documents. En cas de besoin, il peut ajouter ou supprimer des mot-clés. Par ailleurs, le service documentaire met également à jour dans le logiciel une liste de thématiques (exemple : <sc:inlineStyle role="quote">écologie</sc:inlineStyle>, <sc:inlineStyle role="quote">économie numérique</sc:inlineStyle>, <sc:inlineStyle role="quote">industrie chimique</sc:inlineStyle>) auxquelles il associe les mot-clés existants. Ainsi par exemple le mot clé <sc:inlineStyle role="quote">énergies renouvelables</sc:inlineStyle> est associé à la thématique <sc:inlineStyle role="quote">écologie</sc:inlineStyle> ou le mot-clé <sc:inlineStyle role="quote">intelligence artificielle</sc:inlineStyle> à la thématique <sc:inlineStyle role="quote">économie numérique</sc:inlineStyle>.</sc:para>
+						<sc:para xml:space="preserve">Le service documentaire identifie également à l'aide des besoins des clients transmis par le service commercial, des catégories de clients associées à des thématiques et des mots-clés et les renseigne dans le logiciel.</sc:para>
+						<sc:para xml:space="preserve">Une fois les documents indexés (associés à des mot-clés), le service de veille peut accéder aux différents documents en naviguant dans le logiciel de veille via les mots-clés et les thématiques créées par le service documentaire. L'objectif du service de veille est de sélectionner les documents les plus pertinents et de les indiquer dans le logiciel.</sc:para>
+						<sc:para xml:space="preserve">En fin de semaine, le service communication établit à l'aide des documents sélectionnés par le service veille des newsletter pour chaque catégorie. Ces newsletter permettent un accès synthétique et ergonomique aux documents. Ils extraient ensuite à l'aide du logiciel de veille la liste des clients pour chaque catégorie et leur soumettent la newsletter à l'aide du logiciel <sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://mailchimp.com/</sp:url></op:urlM>mailChimp</sc:phrase>.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Décrire le système d'information de l'entreprise en création en utilisant :</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs diagrammes de flux ;</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs MCT ;</sc:para>
+								<sc:para xml:space="preserve">-Un MLDR pour représenter une base de données capables de stocker les informations échangées dans l'entreprise.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:ueDiv xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:ueDivM>
+			<sp:title>Système de gestion de bases de données - Système d'Information et de Gestion</sp:title>
+			<sp:sTitle>SGBD/SIG : Merise, Access, PowerBI</sp:sTitle>
+		</op:ueDivM>
+		<sp:div>
+			<op:ueDiv>
+				<op:ueDivM>
+					<sp:title>Systeme de gestion de base de données - Modélisation MERISE</sp:title>
+					<sp:sTitle>S3 - Système de gestion de base de données</sp:sTitle>
+				</op:ueDivM>
+				<sp:intro>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Extrait du Programme Pédagogique National</sc:para>
+								<sc:para xml:space="preserve">PPN Gestion des entreprises et des administrations, 2013</sc:para>
+								<sc:para xml:space="preserve">© Ministère de l'enseignement supérieur et de la recherche, 2013</sc:para>
+								<sc:para xml:space="preserve">http://www.enseignementsup-recherche.gouv.fr</sc:para>
+								<sc:para xml:space="preserve">Système de gestion de bases de données de la GCF</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Objectifs du module :</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Participer à la conception et à l'évolution des systèmes d'information dans une organisation </sc:para>
+								<sc:para xml:space="preserve">Développer et paramétrer une application informatique avec un Système de Gestion de Bases de Données Relationnelles (SGBDR)</sc:para>
+								<sc:para xml:space="preserve">Compétences visées :</sc:para>
+								<sc:para xml:space="preserve">Représenter schématiquement les flux d'information, les données et les traitements d'un système d'informatisation</sc:para>
+								<sc:para xml:space="preserve">Rechercher et proposer une ou plusieurs solutions à un problème d'informatisation</sc:para>
+								<sc:para xml:space="preserve">Développer tout ou partie d'une application informatique avec un SGBDR</sc:para>
+								<sc:para xml:space="preserve">Utiliser l'aide en ligne et/ou la documentation technique d'un SGBDR</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Contenus :</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Modélisation des flux du système d'information, des données et des traitements</sc:para>
+								<sc:para xml:space="preserve">Articulation des données et des traitements</sc:para>
+								<sc:para xml:space="preserve">Caractéristiques des Systèmes de Gestion de Bases de Données Relationnelles (SGBDR)</sc:para>
+								<sc:para xml:space="preserve">Création et interrogation d'une base de données et de l'interface utilisateur</sc:para>
+								<sc:para xml:space="preserve">Liaisons entre applications informatiques et leurs mises en œuvre</sc:para>
+								<sc:para xml:space="preserve">Mise en œuvre et exploitation d'un cas appliqué à la GCF</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:intro>
+				<sp:courseUa sc:refUri="/Cours/sig/si.xml"/>
+				<sp:courseUc sc:refUri="/Cours/merise/merise.xml"/>
+				<sp:courseUa sc:refUri="/Cours/flux/flux.xml"/>
+			</op:ueDiv>
+		</sp:div>
+		<sp:div>
+			<op:ueDiv>
+				<op:ueDivM>
+					<sp:title>Systeme d'Information de Gestion</sp:title>
+					<sp:sTitle>S4 - Systeme d'Information de Gestion</sp:sTitle>
+				</op:ueDivM>
+				<sp:intro>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Le Programme Pédagogique National</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp"><sc:inlineStyle role="quote">Objectifs du module :</sc:inlineStyle></sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Sensibiliser aux enjeux de l'intégration du système d'information</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Appréhender la gestion de l'entreprise au travers d'un</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">système d'information </sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote"><sc:inlineStyle role="emp">Compétences visées :</sc:inlineStyle></sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Représenter schématiquement les processus d'une organisation</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Apprécier et analyser la double dimension, technologique et organisationnelle, des systèmes d'information</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote"><sc:inlineStyle role="emp">Contenus :</sc:inlineStyle></sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Analyse et modélisation des processus transversaux de l'entreprise</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Gestion informatisée de la relation partenaire (entreprises, clients, fournisseurs, administrations...)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Introduction au système décisionnel : système d'information et d'aide à la décision (SIAD), entrepôt et forage de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Echange informatisé de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Analyse de l'intégration</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Paramétrage de progiciel</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">Mise en oeuvre et exploitation d'un cas</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">-----------------------------------------------------------------------------------</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Organisation du module</sc:inlineStyle></sc:para>
+								<sc:table role="">
+									<sc:column width="50"/>
+									<sc:column width="50"/>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">Nombre de séances</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Au programme</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">2</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Modèle Conceptuel des Traitements (MCT)</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">5</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">MLDR et SQL sous Access : Initiation à la conception de bases de données et à leur requêtage</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">1</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Power BI : initiation à la création de tableaux de bord de pilotage à partir du contenu d'une base de données</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">4</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Projet</sc:para>
+										</sc:cell>
+									</sc:row>
+								</sc:table>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">--------------------------------------------------------------------------------</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Objectifs spécifiques</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Comprendre et représenter un système d'information</sc:para>
+								<sc:para xml:space="preserve">Concevoir une base de données</sc:para>
+								<sc:para xml:space="preserve">Utiliser Access pour créer une base de données et requêter des données</sc:para>
+								<sc:para xml:space="preserve">Utiliser Power BI pour créer des tableaux de bord de pilotage dynamiques et visibles online. Exemple de tableau de bord sur la qualité des fournisseurs : <sc:phrase role="url"><sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://app.powerbi.com/view?r=eyJrIjoiNTdlYmM2MGItZWRhMy00Mzk0LTg2ZmYtNjIwODM0MjBlNjI1IiwidCI6ImZlZGFmZGQ0LWU2ZWEtNDMxMS1hMTBjLTRhODE4NzgzYWE3MyIsImMiOjh9</sp:url></op:urlM>https://app.powerbi.com/view?r=eyJrIjoiNTdlYmM2MGItZWRhMy00Mzk0LTg2ZmYtNjIwODM0MjBlNjI1IiwidCI6ImZlZGFmZGQ0LWU2ZWEtNDMxMS1hMTBjLTRhODE4NzgzYWE3MyIsImMiOjh9</sc:phrase></sc:phrase> (description <sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://powerbi.microsoft.com/fr-fr/documentation/powerbi-sample-datasets/#supplier-quality-sample</sp:url></op:urlM>ici</sc:phrase>)</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:intro>
+				<sp:courseUa sc:refUri="/Cours/mct/mct.xml"/>
+				<sp:courseUa sc:refUri="/Cours/exoRab/rab.xml"/>
+			</op:ueDiv>
+		</sp:div>
+	</op:ueDiv>
+</sc:item>

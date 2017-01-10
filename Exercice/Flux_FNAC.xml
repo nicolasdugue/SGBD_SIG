@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Cas d'application : Gestion des ventes Hi-Fi à la FNAC</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Domaine d'étude : Gestion des ventes</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Quand un client s'adresse à un vendeur et lui dit qu'il souhaite acheter une chaîne Hi-fi (par exemple), celui-ci vérifie sur ordinateur si l'article est disponible. Si ce n'est pas le cas, le vendeur informe le client de l'indisponibilité du matériel souhaité ; sinon le vendeur remplit un bon avec les références de l'article et le prix à payer. Le client doit alors se présenter à la caisse, muni de ce bon. Une fois le montant à payer réglé, la caissière lui remet une facture et un bon de sortie de stock. Un double de bon de sortie est envoyé à l'entrepôt afin que soit apporté au magasin (au rayon &quot;retrait des articles&quot;) l'article Hi-fi. Le client se présente alors au rayon &quot;retrait des articles&quot;, juste à côté de la caisse et présente son bon de sortie de stock. Dès que l'article est arrivé, un employé tamponne le bon de sortie : &quot;article livré&quot; et remet l'article acheté au client.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Identifier les acteurs internes, externes et les domaines connexes.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:sol>
+					<op:pb>
+						<sp:info>
+							<op:pbTi>
+								<sp:title>Acteurs externes</sp:title>
+							</op:pbTi>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Clients</sc:para>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:info>
+						<sp:info>
+							<op:pbTi>
+								<sp:title>Domaines connexes</sp:title>
+							</op:pbTi>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Entrepôt</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Retrait des articles</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:info>
+						<sp:info>
+							<op:pbTi>
+								<sp:title>Acteurs internes</sp:title>
+							</op:pbTi>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Vendeurs</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Caisses</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:info>
+					</op:pb>
+				</sp:sol>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Réaliser le diagramme de contexte.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:sol>
+					<op:pb>
+						<sp:info>
+							<op:pbTi/>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Les flèches en pointillés bleus sont facultatives puisqu'elles ne concernent pas directement le système d'information de la Gestion des ventes.</sc:para>
+										<sc:para xml:space="preserve">A droite, on retrouve les domaines connexes qui font partie de l'entreprise, mais pas du système de gestion des ventes. Les domaines connexes sont représentés avec des rectangles.</sc:para>
+										<sc:para xml:space="preserve">A gauche, les client représentent un acteur externe dans le système d'information et ils sont donc représentés par une ellipse.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:res sc:refUri="/Image/fnac.png">
+									<op:resInfoM/>
+								</sp:res>
+							</op:res>
+						</sp:info>
+					</op:pb>
+				</sp:sol>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

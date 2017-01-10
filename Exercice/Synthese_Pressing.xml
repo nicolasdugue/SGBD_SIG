@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Flux et MCT : le cas d'un pressing</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Un grand pressing s'est installé à Metz. Pour économiser un poste d'un employé, le pressing a instauré un système de carte magnétique.</sc:para>
+						<sc:para xml:space="preserve">Quand un client apporte des vêtements à nettoyer, l'employé du pressing lui donne une carte si c'est la première venue du client. Sinon, il lui demande sa carte afin d'inscrire sur celle-ci les vêtements apportés.</sc:para>
+						<sc:para xml:space="preserve">Le paiement se fait lors de la dépose des vêtements. Le prix à payer pour un vêtement dépend du type de vêtement (pantalon, veste, jupe,. ..).</sc:para>
+						<sc:para xml:space="preserve">Cependant le prix varie aussi en fonction de la qualité de nettoyage demandée (standard, luxe). Quand le client vient chercher ses vêtements, il glisse sa carte dans l'automate et ses vêtements lui sont automatiquement présentés, sauf si le client est venu trop tôt par rapport à la date prévue de reprise des vêtements.</sc:para>
+						<sc:para xml:space="preserve">Tous les 6 mois, le pressing envoie à ses clients ayant au moins utilisé 3 fois le service dans l'année une remise de 30%.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">a) Etablir le diagramme de flux</sc:para>
+								<sc:para xml:space="preserve">b) Etablir le MCT</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

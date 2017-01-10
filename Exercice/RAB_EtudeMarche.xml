@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Aide à la création d'étude de marché</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Avec deux collègues, vous décidez de vous lancer dans l'aventure entrepreneuriale. Vous souhaitez proposer aux entreprises un système permettant la création rapide, facile d'études de marché précises et ciblées à bas coût. Pour réaliser votre projet et atteindre ces objectifs ambitieux, vous comptez sur un système d'information robuste et souple. Il s'agit en effet de créer une plateforme web sur laquelle vos clients vont pouvoir eux-mêmes créer leur étude de marché personnalisée, en préciser la cible puis y consulter les résultats.</sc:para>
+						<sc:para xml:space="preserve">Vous définissez donc le cahier des charges de votre futur système d'information avec vos associés.</sc:para>
+						<sc:para xml:space="preserve">Votre plateforme doit proposer trois espaces de fonctionnalités différents.</sc:para>
+						<sc:para xml:space="preserve">Pour chacun de ces espaces, la plateforme propose un module de connexion et d'inscription. </sc:para>
+						<sc:para xml:space="preserve">Dans le premier espace destinés aux clients, l'inscription permet de récupérer des données sur le client (Nom société, domaine d'activité, taille, CA, comment le client a connu la plateforme).</sc:para>
+						<sc:para xml:space="preserve">Le premier espace permet tout d'abord à des clients de créer des études de marché. Il s'agit d'un ensemble de formulaire permettant de définir la cible de l'étude (zone géographique, tranche d'ages, CSP) mais aussi d'une liste de questions à transmettre sur la cible, d'une liste d'informations à collecter sur les participants et d'une date limite à laquelle l'étude doit etre terminée. Ensuite, cet espace propose aux clients de consulter les résultats de l'étude de marché :  les réponses mais également les données concernant les participants. Il est ensuite possible pour le client du choisir un sous-échantillon des participants à l'étude pour les resoumettre à un nouveau questionnaire.</sc:para>
+						<sc:para xml:space="preserve">Dans le second espace destinés aux particuliers, les internautes ont la possibilité de s'inscrire pour participer aux études de marché. Ils renseignent leurs informations personnelles grace auxquelles ils se verront ensuite affecter des questionnaires. Si des questionnaires leur sont affectées, ils peuvent accepter d'y répondre ou refuser. S'ils acceptent, ils reçoivent une rémunération sur leur compte.</sc:para>
+						<sc:para xml:space="preserve">Dans le troisième espace, les administrateurs de la plateforme, à savoir vous et vos associés, pouvez gérer les compter des particuliers et des clients, consulter la liste des études de marché en cours, affecter des particuliers à des questionnaires et chiffrer la rémunération versée aux participants.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Décrire le système d'information de l'entreprise en création en utilisant :</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs diagrammes de flux ;</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs MCT ;</sc:para>
+								<sc:para xml:space="preserve">-Un MLDR pour représenter une base de données capables de stocker les informations échangées dans l'entreprise.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

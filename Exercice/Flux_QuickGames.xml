@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Modélisation des flux de SNFC</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Vous travaillez au département communication de la société SNFC qui gère les transports en train à Petaouchnok. Pour redorer l'image de votre société ternie par les grèves, les retards et le plaisir de râler, vous souhaitez mettre en place une stratégie de communication sur les réseaux sociaux qui soit capable d'engager les internautes. Vous pensez ainsi à réaliser des jeux concours qui seront diffusés sur la page LivreDeTete de votre entreprise et auxquels tous les abonnés pourront participer : vous espérez ainsi également les fidéliser.</sc:para>
+						<sc:para xml:space="preserve">Vous n'êtes par contre pas informaticien et le service informatique de la SNFC n'est pas compétent pour le développement d'outils informatiques à destination des réseaux sociaux. Vous faîtes donc appel à une société de service en informatique pour vous aider à réaliser ces jeux concours, et leur fournissez la documentation qui suit :</sc:para>
+						<sc:para xml:space="preserve">Le logiciel développé doit permettre la création de jeux concours sur mesure dont les modes de jeu sont les suivants : </sc:para>
+						<sc:itemizedList>
+							<sc:listItem>
+								<sc:para xml:space="preserve">Tirage au sort ;</sc:para>
+							</sc:listItem>
+							<sc:listItem>
+								<sc:para xml:space="preserve">Quizz ;</sc:para>
+							</sc:listItem>
+							<sc:listItem>
+								<sc:para xml:space="preserve">Jeu photo.</sc:para>
+							</sc:listItem>
+						</sc:itemizedList>
+						<sc:para xml:space="preserve">Pour chacune de ces modalités, le service communication doit pouvoir spécifier la durée du jeu, le jeu en lui-même, le nombre maximum de participants et le lot à gagner.</sc:para>
+						<sc:para xml:space="preserve">Suite à cela, le logiciel met en place le jeu automatiquement sur le compte LivreDeTete de la SNFC.</sc:para>
+						<sc:para xml:space="preserve">Les internautes peuvent ainsi participer au jeu dans la limite du nombre de participants. Si trop de participants ont déjà joué, ils peuvent alors s'inscrire sur une liste d'attente en donnant leur mail pour être prévenu si le jeu est à nouveau publié plus tard.</sc:para>
+						<sc:para xml:space="preserve">Sinon, ils jouent et fournissent leur coordonnées et des informations personnelles qui sont centralisées sur le logiciel.</sc:para>
+						<sc:para xml:space="preserve">Lorsque le nombre de participants est dépassé, le logiciel prévient le service communication.</sc:para>
+						<sc:para xml:space="preserve">Une fois le jeu terminé, le service communication reçoit la liste de tous les participants et leurs réponses. Ils transmettent cette liste au service juridique qui officialise les résultats. Les gagnants sont informés par le service communication. Ce même service leur envoie par la suite les lots gagnés.</sc:para>
+						<sc:para xml:space="preserve">La liste des internautes en liste d'attente est également transmise au service communication.</sc:para>
+						<sc:para xml:space="preserve">Par ailleurs, les informations personnelles des participants sont transmises par le logiciel au service marketing qui analyse les données sur ces joueurs de façon à mieux connaître le public touché par ces jeux et leur efficacité.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Pour assister la société informatique dans sa compréhension de l'outil à développer, vous réalisez un diagramme qui représente les flux liés au système de jeu à mettre en place :</sc:para>
+								<sc:para xml:space="preserve">a) Dressez la liste des acteurs externes et des domaines connexes au domaine d'étude.</sc:para>
+								<sc:para xml:space="preserve">b) Élaborez le diagramme de contexte.</sc:para>
+								<sc:para xml:space="preserve">c) Élaborez le DCF en ajoutant les activités au diagramme de contexte.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Modélisation des flux de Butathlon</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Vous travaillez dans un réseau de distribution d'articles de sport qui est structuré de la manière suivante:</sc:para>
+						<sc:itemizedList>
+							<sc:listItem>
+								<sc:para xml:space="preserve"> une centrale d'achat,</sc:para>
+							</sc:listItem>
+							<sc:listItem>
+								<sc:para xml:space="preserve"> des magasins de distribution.</sc:para>
+							</sc:listItem>
+						</sc:itemizedList>
+						<sc:para xml:space="preserve">Les magasins sont franchisés et disposent donc d'une assistance en gestion commerciale. La centrale à laquelle vous appartenez souhaite fournir une analyse du système d'information relatif au domaine de la gestion des approvisionnements de chaque magasin afin d'en informatiser le fonctionnement à terme. </sc:para>
+						<sc:para xml:space="preserve">Vous disposez donc des informations suivantes pour modéliser la partie correspondante du système d'information :</sc:para>
+						<sc:para xml:space="preserve">Les articles de sport sont présélectionnés par la centrale d'achat. Les magasins reçoivent, chaque début de saison, un catalogue des articles présélectionnés pour la saison suivante. Ce catalogue contient la référence de chaque article, son prix négocié, le nom du fournisseur et la quantité disponible.</sc:para>
+						<sc:para xml:space="preserve">Chaque magasin choisit les produits qu'il souhaite mettre en vente, ainsi que les quantités qui s'y rapportent. Celui-ci établit une seule commande pour la saison.</sc:para>
+						<sc:para xml:space="preserve">Ces « commandes magasins » sont envoyées à la centrale. Toutes les commandes des magasins arrivent au service achats de la centrale 30 jours avant le début de la saison. Le service achats établit les commandes fermes aux fournisseurs. Pour la saison, une seule commande globale est établie pour chaque fournisseur.</sc:para>
+						<sc:para xml:space="preserve">Les fournisseurs livrent directement les magasins au plus tard 5 jours avant le début de la saison. À la livraison des produits aux magasins, les marchandises sont contrôlées et stockées en attendant le début de la saison. Le bon de livraison est remis au service comptabilité de chaque magasin. Lors du contrôle, les magasins peuvent constater des écarts de quantités. Cela n'induit pas pour autant de réclamation aux fournisseurs ou la passation de nouvelles commandes de la part des magasins.</sc:para>
+						<sc:para xml:space="preserve">Dans la matinée du premier jour de lancement de la saison, les produits sont étiquetés et mis en rayon dans tous les magasins.</sc:para>
+						<sc:para xml:space="preserve">Les commandes des magasins sont établies pour couvrir la totalité des ventes correspondant à la période. Néanmoins, durant la saison, les magasins peuvent s'apercevoir que les ventes risquent d'être supérieures aux prévisions et peuvent déclencher des réassortiments. Compte tenu de l'urgence, ces demandes de réassortiment sont établies par les magasins et adressées directement aux fournisseurs.</sc:para>
+						<sc:para xml:space="preserve">Les commandes de la saison doivent toutes être impérativement vendues; à cet effet une campagne de soldes peut être déclenchée en fin de saison. Néanmoins, en fin de saison, les marchandises restant en stock après inventaire sont retournées aux fournisseurs.</sc:para>
+						<sc:para xml:space="preserve">Il n'y a pas de stock résiduel de produits de la saison de l'année précédente.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">a) Identifiez le domaine d'étude</sc:para>
+								<sc:para xml:space="preserve">b) Dressez la liste des acteurs externes et des domaines connexes au domaine d'étude.</sc:para>
+								<sc:para xml:space="preserve">c) Élaborez le diagramme de contexte (acteurs externes, flux de données).</sc:para>
+								<sc:para xml:space="preserve">d) Élaborez le DCF.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

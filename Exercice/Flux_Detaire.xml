@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Modélisation des flux de Detaire</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">La SARL DETAIRE dans laquelle vous travaillez fabrique et commercialise des produits alimentaires à base de pommes de terre.</sc:para>
+						<sc:para xml:space="preserve">Les dirigeants souhaitent une analyse de leur système d'information et plus particulièrement le domaine de la gestion des activités commerciales. On vous confie cette tâche pour bénéficier de votre connaissance des processus liés à ce métier. Vous avez réalisé le descriptif préliminaire suivant :</sc:para>
+						<sc:para xml:space="preserve">Le service commercial recueille chaque jour les commandes des clients (pour l'essentiel des grandes surfaces), chaque commande est saisie par une secrétaire commerciale. Cette secrétaire vérifie la situation des clients avec l'état des litiges adressés par le service contentieux.</sc:para>
+						<sc:para xml:space="preserve">Les commandes passées par les clients litiges (clients ayant un encours de crédit supérieur au plafond) sont bloquées. Et la commande est alors transmise au service contentieux.</sc:para>
+						<sc:para xml:space="preserve">Les autres commandes sont transmises au secrétariat du service expédition.</sc:para>
+						<sc:para xml:space="preserve">Lorsque le service contentieux reçoit une commande bloquée, il envoie aussitôt un courrier aux clients concernés. Le service contentieux examine en fin de journée la situation des clients litiges et débloquent les commandes des clients ayant régularisé leur situation.</sc:para>
+						<sc:para xml:space="preserve">Les commandes des clients sont préparées par le service expédition : en début de matinée, les bons de préparation sont imprimées par la secrétaire du service puis transmis au responsable du service qui les dispatchent auprès des différents préparateurs. Les préparateurs emballent les colis, les chargent dans les camions et notent les quantités livrées sur l'ordre de préparation. Le préparateur saisit ensuite les quantités livrées pour chaque commande.</sc:para>
+						<sc:para xml:space="preserve">Une fois le bon de préparation établi, celui-ci est remonté au service commercial qui peut alors éditer le bon de livraison en 2 exemplaires (1 pour le transporteur et 1 pour le service commercial).</sc:para>
+						<sc:para xml:space="preserve">Un double des ordres de préparation est remis au secrétariat commercial qui se charge alors de saisir les bons de livraison. Pour les commandes incomplètes, un état des reliquats de commande est établi par un employé du service commercial qui l'adresse aussitôt à la secrétaire commerciale</sc:para>
+						<sc:para xml:space="preserve">Un employé du service commercial imprime la facture en 3 exemplaires : 1 pour le client, 1 pour la comptabilité et 1 pour les archives.</sc:para>
+						<sc:para xml:space="preserve">Le service commercial adresse par ailleurs en fin de mois un relevé de factures au client</sc:para>
+						<sc:para xml:space="preserve">Les Clients adressent leur règlement au service comptable qui les imputent en comptabilité.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">1) recherchez dans l'énoncé quels sont les domaines connexes au domaine d'étude « Gestion de l'activité commerciale »</sc:para>
+								<sc:para xml:space="preserve">2) Recherchez quels sont les acteurs externes</sc:para>
+								<sc:para xml:space="preserve">3) Représentez le modèle (ou diagramme de contexte)</sc:para>
+								<sc:para xml:space="preserve">4) A l'aide de l'énoncé ci-dessus, identifiez les différentes activités du domaine d'étude gestion des activités commerciales</sc:para>
+								<sc:para xml:space="preserve">5) Présentez le DCF</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

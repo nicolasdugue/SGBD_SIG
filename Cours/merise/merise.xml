@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Modéliser le Système d'information : Pourquoi et comment ?</sp:title>
+			<sp:sTitle>Modéliser le SI : Pourquoi et comment ?</sp:sTitle>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Périmètre du Module</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Dans ce module, nous allons travailler à la modélisation/représentation/conception d'un Système d'Information. Nous allons tout d'abord utiliser deux types diagrammes qui nous permettront de représenter :</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve">les échanges d'information dans l'entreprise et avec l'extérieur (MCF) ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">le traitement de l'information au sein de l'entreprise (MCT).</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">Nous étudierons ensuite comment concrètement stocker l'information dans une base de données (MPD), et comment récupérer cette information.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:remind>
+					<op:pbTi>
+						<sp:title>Systeme d'information</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Wikipedia : Le système d'information (SI) est un ensemble organisé de ressources qui permet de collecter, stocker, traiter et distribuer de l'information <sc:inlineStyle role="emp">souvent grâce à un ordinateur</sc:inlineStyle>. Il s'agit d'un système socio-technique composé de deux sous-systèmes,<sc:inlineStyle role="emp"> l'un social et l'autre technique</sc:inlineStyle>. Le sous-système social est composé de la structure organisationnelle et des personnes liées au SI. Le sous-système technique est composé des technologies (hardware, software et équipements de télécommunication) et des processus concernés par le SI.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Ainsi par exemple, le système de messagerie, le logiciel de gestion de la paye, Excel, le logiciel de gestion clients (CRM) sont des composants du système d'information. Par ailleurs, tous les documents papier qui transitent entre les acteurs de l'entreprise font également partie du système d'information : factures, rapports, bons de commande. Enfin, les acteurs internes à l'entreprise, mais également externes sont aussi partie intégrante du service d'information : ce sont eux qui demandent, transmettent ces informations.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:remind>
+				<sp:rem>
+					<op:pbTi>
+						<sp:title>Pourquoi représenter/modéliser le système d'information ?</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"> Iil s'agit de faire un état des lieux du fonctionnement de l'entreprise quant à la circulation de l'information de façon à faire ensuite évoluer certains de ses processus. En général, l'évolution du système d'information correspond à une informatisation de certains processus/échanges de données. Cet état des lieux permet donc de communiquer avec les informaticiens en charge de réaliser ces évolutions en leur donnant les moyens de comprendre le fonctionnement de l'entreprise, et ses nouveaux besoins.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Exemple</sc:inlineStyle> : La SNCF donne depuis plusieurs années la possibilité d'acheter des E-billets. Pour fournir ce service, l'entreprise a dû informatiser complètement la gestion de ces billets, et donc faire évoluer son système d'information. Dans ce but, les informaticiens ont dû se confronter à des questions comme : &quot;En cas d'annulation d'un train, que se passe-t-il ?&quot;, &quot;Quel nombre de places pour chaque trajet ?&quot;, &quot;Combien de controleurs par trains ?&quot;, &quot;Comment se passe l'affectation des controleurs à un trajet ?&quot; etc... La modélisation du fonctionnement du système d'information classique ainsi que des nouveaux besoins pour les billets électroniques ont permis le dialogue entre la SNCF et l'entreprise en charge du développement informatique du E-billet.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Exemple</sc:inlineStyle> : Une boutique propose une carte de fidélité à ses clients. Seulement, jusque là, la gestion de cette carte de fidélité n'est pas faite de façon informatique. Avec l'augmentation du nombre de clients, il devient difficile de gérer cette carte de fidélité et l'entreprise souhaite donc informatiser la carte de fidélité. Ils font donc appel à une société informatique. Pour mettre en place leur solution informatique, les informaticiens doivent pouvoir connaitre les réponses aux questions suivantes : &quot;La carte de fidélité doit elle apparaitre dans le systeme de gestion de la caisse ?&quot;, &quot;Quel système édite les factures à destination des clients ?&quot;, &quot;Les factures imprimées pour les clients doivent elles faire apparaitre l'identifiant de la carte de fidélité ?&quot;, &quot;Qui aura accès au système informatique pour entrer les nouveaux clients, les promotions liées à la fidélité du client et le montant des remises ?&quot;. Ces réponses seront données par un modèle du système d'information actuel et de celui qui est souhaité par la boutique.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Exemple</sc:inlineStyle> : Une entreprise d'import/export de boissons à base de houblon souhaite également gérer la logistique liée à son activité : le transport de ses produits. Jusque là, cette activité était sous-traitée à une entreprise spécialisée dans le transport donc l'efficacité est remise en cause par l'entreprise. Pour garantir l'efficacité de leur nouveau système logistique, l'entreprise souhaite informatiser tout leur système logistique. Ils font pour cela appel à une société de services en informatique qui leur demande un cahier des charges précis. Ainsi, le cahier des charges mentionne que l'entreprise souhaite pouvoir :</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Voir l'état de ses stocks dans tous ses entrepôts ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Suivre ses camions en temps réel ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Prédire des délais de livraison ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Prédire ses coûts de livraison ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Prévoir des réapprovisionnements.</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">Le système va donc faire communiquer entrepôts, transporteurs, clients, fournisseurs, service achat, et service commercial. Il est donc impératif que le système réponse aux besoins de tous sans bouleverser le fonctionnement interne de l'entreprise ni les communication entre l'entreprise et les fournisseurs et clients. Le service informatique a donc besoin de connaître le fonctionnement actuel de l'entreprise.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La modélisation du système d'information a donc pour vocation de permettre à une entreprise de <sc:inlineStyle role="emp">communiquer</sc:inlineStyle> et de <sc:inlineStyle role="emp">décrire</sc:inlineStyle> son fonctionnement et ses besoins avec un service ou une entreprise spécialisés en informatique. Ce modèle permet de synthétiser de façon claire et intelligible par tous. Il permet ainsi à l'entreprise et au prestataire informatique de se mettre d'accord sur le produit informatique à réaliser pour faire évoluer le système d'information de l'entreprise en utilisant un support compris par les deux parties.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:rem>
+				<sp:def>
+					<op:pbTi>
+						<sp:title>Comment modéliser le système d'information ?</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La méthode de modélisation  Merise fournit un formalisme qui permet de représenter toutes les composantes d'un d'un Système d'Information (SI). Pour cela, MERISE met à notre disposition une batteries de modèles et diagrammes qui sont très utiles aux informaticiens en charge du développement ou de la mise à jour d'un système d'information, mais également aux utilisateurs afin d'expliquer leur besoin et les procédures de leur quotidien.</sc:para>
+								<sc:para xml:space="preserve">Parmi cette batterie d'outils, on retrouve notamment en gras le DCF, le MCT et le MPD que nous allons étudier.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:table role="">
+									<sc:column width="23"/>
+									<sc:column width="42"/>
+									<sc:column width="52"/>
+									<sc:column width="44"/>
+									<sc:row>
+										<sc:cell/>
+										<sc:cell>
+											<sc:para xml:space="preserve">Données</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Traitement </sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Flux</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">Approche</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Statique</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Fonction</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Fonction</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">Conceptuel</sc:para>
+											<sc:para xml:space="preserve">Quoi ?</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">MCD (Modèle Conceptuel des Données) :</sc:para>
+											<sc:para xml:space="preserve">Représentation (statique) de l'ensemble des données manipulées et des relations entre ces données.</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">MCT  (Modèle Conceptuel des Traitements) :</sc:inlineStyle></sc:para>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Représente les actions indépendamment de leur organisation et de la technique employée.</sc:inlineStyle></sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">MFC (Modèle Conceptuel des Flux) :</sc:inlineStyle></sc:para>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Représente les échanges d'informations entre les acteurs conceptuels.</sc:inlineStyle></sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">Organisationnel</sc:para>
+											<sc:para xml:space="preserve">Qui fait quoi, quand, où ?</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">MOD (Modèle Organisationnel des Données) : Il représente un enrichissement du MCD pour prendre en compte des contraintes organisationnelles (qui utilise quoi, où et quand). </sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">MOTA( Modèle Organisationnel des Traitements analytique) : Il décrit les actions sur les objets du MOD.</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">MFO (modèle de flux organisationnel) :</sc:para>
+											<sc:para xml:space="preserve">Représente les échanges d'informations entre les types d'acteurs.</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row>
+										<sc:cell>
+											<sc:para xml:space="preserve">Physique</sc:para>
+											<sc:para xml:space="preserve">Comment ?</sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve"><sc:inlineStyle role="emp">MPD (Modèle Physique des Données) ou Base de données</sc:inlineStyle></sc:para>
+										</sc:cell>
+										<sc:cell>
+											<sc:para xml:space="preserve">Modèle Physique des Traitements : Architecture technique des programmes.</sc:para>
+										</sc:cell>
+										<sc:cell/>
+									</sc:row>
+								</sc:table>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

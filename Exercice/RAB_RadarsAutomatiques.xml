@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Gestion des radars automatiques</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Votre société a remporté le marché public concernant la gestion des radars automatiques en France. Ravis de vous mettre un paquet de billets verts dans les poches, vous débutez la réflexion sur le système d'information qui servira à faire fonctionner ce service.</sc:para>
+						<sc:para xml:space="preserve">Le service informatique reçoit toutes les heures un signal de chaque radaravec son identifiant et sa position indiquant qu'il est en état de fonctionnement. Si le signal n'est pas reçu, le service transmet l'info au service maintenance qui intervient sur place et rétablit le fonctionnement dès que possible.</sc:para>
+						<sc:para xml:space="preserve">Les photos des radar sont analysées automatiquement par le système qui lit la plaque et établit un score quant à la qualité de la photo. Si ce score est supérieur à un seuil, alors le système juge qu'il est possible d'identifier le conducteur et la photo avec les informations quant à la vitesse et à la plaque sont envoyées au service contravention.</sc:para>
+						<sc:para xml:space="preserve">Le service contravention établit alors une synthèse qui est transmise à la préfecture pour identification du conducteur. Une fois les données transmises par la préfecture, le service contravention établit la contravention et l'envoie au contrevenant ainsi qu'au service recouvrement des Finances Publiques.</sc:para>
+						<sc:para xml:space="preserve">Un système de relance puis de majoration est mis en place. Lorsque le paiement n'a pas été reçu, le service contravention reçoit des alertes et transmet ainsi les relances majorées au service recouvrement ainsi qu'au contrevenant.</sc:para>
+						<sc:para xml:space="preserve">En cas de non-paiement des contraventions majorées, le service contravention saisit le service juridique qui lance des démarches auprès de la justice et du contrevenant.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Décrire le système d'information de l'entreprise en création en utilisant :</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs diagrammes de flux ;</sc:para>
+								<sc:para xml:space="preserve">-Un ou plusieurs MCT ;</sc:para>
+								<sc:para xml:space="preserve">-Un MLDR pour représenter une base de données capables de stocker les informations échangées dans l'entreprise.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

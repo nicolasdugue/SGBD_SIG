@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Cours sur le Modèle Conceptuel des Traitements</sp:title>
+			<sp:sTitle>Le MCT : Cours</sp:sTitle>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Dans le modèle Merise, le M.C.T. est appelé « Modèle <sc:inlineStyle role="emp">Evènement-Résultat</sc:inlineStyle> » : L'arrivée d'un ou plusieurs évènements va déclencher une opération qui va produire un résultat. Il sert à décrire en détail le déroulement des activités listées dans le DCF : ce qui les déclenchent (évènement), ce qui se passe une fois déclenchée (opération), et quels sont les résultats produits.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:ex>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Exemple : Dans une entreprise, l'arrivée d'une commande client va entraîner une saisie et une édition d'un accusé de réception.</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> Evènement déclencheur : arrivée d'une commande client</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> Opération : Saisie de la commande</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Résultats : Commande enregistrée (ou en attente), Accusé de réception édité</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:ex>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Représentation schématique du M.C.T.</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">L'évènement</sc:inlineStyle></sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Les flux modélisés constituent souvent des évènements déclencheurs ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Un événement déclenche une opération soit seul soit en synchronisation avec un ou plusieurs autres évènements ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Le temps peut constituer un évènement déclencheur.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">L'opération</sc:inlineStyle></sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve">une opération est représentée par un verbe ou mieux un substantif (ex : Préparer la commande ou préparation de la commande) ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Une opération déclenche au moins un résultat. Le résultat d'une opération peut devenir évènement déclencheur d'une autre opération ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">On peut décrire dans le symbole de l'opération, l'ensemble des actions nécessaires à l'obtention du ou des résultats souhaités (saisie, impression,...).</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Les règles d'émission des résultats</sc:inlineStyle></sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> Les résultats d'une opération peuvent être conditionnés par des règles d'émission. L'absence de règles d'émission signifie que le résultat est « TOUJOURS » produit ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">On ne retient que les règles d'action, on ne retient pas les règles de calcul.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/mct1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:ex>
+					<op:pbTi>
+						<sp:title>Gestion des ventes Hi-Fi à la FNAC</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Reprenons l'exercice d'application précédemment utilisé lors de la modélisation des flux et détaillons le MCT correspondant qui vient compléter le DCF : </sc:para>
+								<sc:para xml:space="preserve">Quand un client s'adresse à un vendeur et lui dit qu'il souhaite acheter une chaîne Hi-fi (par exemple), celui-ci vérifie sur ordinateur si l'article est disponible. Si ce n'est pas le cas, le vendeur informe le client de l'indisponibilité du matériel souhaité ; sinon le vendeur remplit un bon avec les références de l'article et le prix à payer. Le client doit alors se présenter à la caisse, muni de ce bon. Une fois le montant à payer réglé, la caissière lui remet une facture et un bon de sortie de stock. Un double de bon de sortie est envoyé à l'entrepôt afin que soit apporté au magasin (au rayon &quot;retrait des articles&quot;) l'article Hi-fi. Le client se présente alors au rayon &quot;retrait des articles&quot;, juste à côté de la caisse et présente son bon de sortie de stock. Dès que l'article est arrivé, un employé tamponne le bon de sortie : &quot;article livré&quot; et remet l'article acheté au client.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Image/merise/mctfnac1.png">
+							<op:resInfoM/>
+						</sp:res>
+						<sp:res sc:refUri="/Image/merise/mctfnac2.png">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:ex>
+				<sp:ex>
+					<op:pbTi>
+						<sp:title>Règles d'émission</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Dans une entreprise, le traitement des commandes clients est le suivant : l'arrivée d'une commande client entraîne un contrôle du stock : si le stock réel est inférieur au stock d'alerte on passe une commande au fournisseur. Dans tous les cas on établit le bon de livraison qui sera remis au client. </sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/ExempleRegleEmission.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Les clients de la Banque du Nord déposent une demande de crédit. Cette demande de crédit est examinée par une commission. Le crédit est alors soit accepté, soit refusé mais dans tous les cas, un courrier est adressé au client.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/ExempleRegleEmission2.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Prise en compte d'une contrainte de délai - évènement déclencheur de deux opérations</sc:inlineStyle></sc:para>
+										<sc:para xml:space="preserve">Dans le camping Sud Vacances, les réservations de location enregistrées sont traitées comme suit :</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> la réservation est automatiquement annulée si aucun acompte n'est versé dans un délai d'un mois à compter de la date de réservation. Een cas de versement de l'accompte hors délai, celui-ci est remboursé ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> Si un acompte est versé dans les délais, la réservation est confirmée dans le cas où le règlement est correct sinon le versement est retourné au client accompagné d'un courrier explicatif.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/mctTemps.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:ex>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Conclusion : élaboration du M.C.T.</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Pour élaborer un M.C.T. il faut :</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Eliminer tous les évènements organisationnels (qui, quand, quoi, où, comment) ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">Repérer les évènements déclencheurs et les résultats ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> Ordonner les opérations (ordre chronologique) ;</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> Repérer les règles de synchronisation et d'émission.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+										<sc:para xml:space="preserve">La figure de gauche nous montre le lien entre DCF (en haut) et MCT (en bas) : en général, es flux d'informations se trouvant dans le modèle de flux sont les évènements déclencheurs ou résultants des différentes activités.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/synthese.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

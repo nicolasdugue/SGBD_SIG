@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Le Diagramme de Flux Conceptuel (DCF)</sp:title>
+			<sp:sTitle>Le DCF</sp:sTitle>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:def>
+					<op:pbTi/>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Le DCF enrichit le diagramme de contexte des activités principales (macro activités).</sc:para>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">L'activité</sc:inlineStyle> : Ensemble de traitements homogènes du domaine d'étude, transformant ou manipulant des données. Exemples : traitement des commandes clients et des règlements clients.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/merise/DCF1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:def>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

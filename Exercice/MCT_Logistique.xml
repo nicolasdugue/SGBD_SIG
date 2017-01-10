@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Modélisation des traitements : Amazones</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Vous travaillez au département logistique de la société Amazones qui tente de concurrencer déloyalement Amazon. Pour faire en sorte d'être parfaitement compétitif sur les délais de livraison, vous souhaitez informatiser tout le système logistique. Vous constatez que vos compétences Excel sont insuffisantes à la mise en place d'un tel système informatique, et vous sous-traitez ce projet à une société de service en informatique.</sc:para>
+						<sc:para xml:space="preserve">Pour guider cette société, vous avez rédigé un cahier des charges succint :</sc:para>
+						<sc:para xml:space="preserve">Lorsqu'une commande est passée en ligne par un internaute, le système de gestion des commandes la transmet au système logistique. Celui-ci recherche alors quel entrepôt possède en stock les articles commandés et transmet la commande à l'entrepôt sélectionné.</sc:para>
+						<sc:para xml:space="preserve">Chaque matin et chaque après-midi, le gestionnaire de l'entrepôt imprime les commandes et les transmet aux managers qui font préparer les commandes.</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Lorsqu'une commande est prête, l'employé l'ayant préparé met à jour le système logistique en indiquant tous les articles qui ont été pris dans les stocks pour satisfaire la commande. Le système met à jour les stocks dès qu'il reçoit ce type d'information. Lorsque le stock d'un article est trop bas, le système prévient le service logistique via un email d'alerte.</sc:inlineStyle></sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">La commande préparée est ensuite envoyée au service expédition. Lorsque la commande est transmise au transporteur par le service expédition, celle-ci est notée dans le système comme envoyée par le service expédition.</sc:inlineStyle></sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">A la fin de chaque journée, le transporteur transmet au service logistique le numéro des commandes livrées. Ces numéros sont entrés dans le système qui leur assigne l'état "livré".</sc:inlineStyle></sc:para>
+					</op:txt>
+				</sp:txt>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Vous disposez également du Diagramme de contexte à droite que vous avez réalisé précédemment :</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/merise/MCT_Logistique.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Etablir le MCT décrivanr le texte en gras.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:sol>
+					<op:pb>
+						<sp:info>
+							<op:pbTi/>
+							<op:res>
+								<sp:res sc:refUri="/Image/merise/MCT_LOG.png">
+									<op:resInfoM/>
+								</sp:res>
+							</op:res>
+						</sp:info>
+					</op:pb>
+				</sp:sol>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>
