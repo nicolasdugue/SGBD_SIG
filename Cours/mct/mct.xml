@@ -6,7 +6,7 @@
 			<sp:sTitle>Modèle Conceptuel des Traitements</sp:sTitle>
 		</op:uM>
 		<sp:courseUc sc:refUri="/Cours/mct/mct_c1.xml"/>
-		<sp:practUc sc:refUri="/Exercice/Flux_QuickGames.xml"/>
+		<sp:practUc sc:refUri="/Exercice/MCT_QuickGames.xml"/>
 		<sp:practUc sc:refUri="/Exercice/MCT_Logistique.xml"/>
 		<sp:practUc sc:refUri="/Exercice/Synthese_Pressing.xml"/>
 	</op:courseUa>
