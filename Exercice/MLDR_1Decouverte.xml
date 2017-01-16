@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM/>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Dans un cadre de verdure, sur les collines surplombant les gorges de la Loire, le golf de Champlong accueille toute personne désireuse d'associer aux joies de la promenade les exigences de la petite balle blanche. Pour cela, le futur adhérent fournit quelques renseignements et choisit sa formule de cotisation : complète (tous les jours de l'année) tarifée 500 € ou semaine (du lundi ou vendredi) tarifée 300 €. S'il a moins de 21 ans, l'inscrit aura droit à un tarif jeune (250 €) tout en bénéficiant des greens chaque jour de la semaine. En fonction de son âge, l'adhérent sera affecté à une catégorie : benjamin, minime, cadet, junior, adulte, senior.</sc:para>
+						<sc:para xml:space="preserve">Romain Rocher, le vice-président de l'association qui gère le golf, vous propose d'examiner avec lui son système d'information et d'étudier la base de données qui a été créée afin de résoudre les problèmes rencontrés lors de la saisie de nouveaux adhérents.</sc:para>
+						<sc:para xml:space="preserve">Vous disposez:</sc:para>
+						<sc:para xml:space="preserve">- du logiciel ACCESS,</sc:para>
+						<sc:para xml:space="preserve">- de la base de données Golf.mdb,</sc:para>
+						<sc:para xml:space="preserve">- d'un document <sc:uLink role="ucLnk" sc:refUri="/Cours/mldr/annexe1.xml">Quelques exemples d'adhérents (annexe 1)</sc:uLink>,</sc:para>
+						<sc:para xml:space="preserve">- du <sc:uLink role="ucLnk" sc:refUri="/Cours/mldr/annexe2.xml">schéma relationnel (annexe 2)</sc:uLink>,</sc:para>
+						<sc:para xml:space="preserve">- de<sc:uLink role="ucLnk" sc:refUri="/Cours/mldr/annexe3.xml"> fiches de nouveaux adhérents (annexe 3)</sc:uLink>,</sc:para>
+						<sc:para xml:space="preserve">- de <sc:uLink role="ucLnk" sc:refUri="/Cours/mldr/annexe4.xml">l'analyse de la structure de la table ADHERENT (annexe 4)</sc:uLink>,</sc:para>
+						<sc:para xml:space="preserve">- des Bases d'information : une <sc:uLink role="ucLnk" sc:refUri="/Cours/mldr/mldr_BI_schema.xml">première</sc:uLink> à propos du modèle relationnel, une <sc:uLink role="ucLnk" sc:refUri="/Cours/mldr/mldr_BI_bdd.xml">seconde</sc:uLink> à propos des bases de données.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">Observer le système d'information</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : annexe 1 Base info Information et domaine d'étude point 2</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Base info Schéma relationnel point 3</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">1.1 - Précisez le domaine d'étude :_________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">1.2 - Relevez les principales différences entre les éléments décrivant un adhérent au club de golf de Champlong dans la vie et dans le système d'information du golf (voir annexe 1) :_________________________________</sc:para>
+								<sc:para xml:space="preserve">_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">1.3 - Dans la vie, qu'est-ce qui permet de repérer une personne parmi les autres? _______________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">Dans le système d'information du golf, qu'est-ce qui permet de repérer un adhérent parmi les autres? ____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">Pourquoi ne pas avoir conservé le «repère» défini dans la vie? : ____________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Prendre connaissance du schéma relationnel</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : annexe 2 - Bases info Schéma relationnel points 2 - 3 - 4 - 7</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">2.1 - Quelle est la clé primaire de la relation ADHERENT? :______________________________________</sc:para>
+								<sc:para xml:space="preserve">2.2 - La connaissance d'une valeur de cet attribut entraîne-t-elle la connaissance de la valeur de chacun des autres attributs? Donnez trois exemples de dépendance fonctionnelle (Vous pouvez vous aider des exemples du système d'information du golf de l'annexe 1) :</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">2.3 - Justifiez la décomposition de l'adresse de l'adhérent en trois éléments distincts :___________________</sc:para>
+								<sc:para xml:space="preserve">________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">2.4 – Quelles sont les autres relations qui composent le schéma relationnel ? Précisez la clé primaire de chacune d'elle :_____________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">2.5·- Dans le Contexte du début de ce cas:</sc:para>
+								<sc:para xml:space="preserve">- surlignez le nom des objets décrits par les relations du schéma relationnel: _____________________</sc:para>
+								<sc:para xml:space="preserve">______________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">- repérez les verbes qui décrivent les interdépendances entre les objets du système d'information:</sc:para>
+								<sc:para xml:space="preserve">_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">2.6 - Dans le schéma relationnel, comment sont représentées ces interdépendances? _____________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Observer la base de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : Bases info Base données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource électronique : document Golf. mdb</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Ouvrez la base de données Golf.mdb.</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">3.1 - Combien de tables compte la base de données? _____________________________________________</sc:para>
+								<sc:para xml:space="preserve">3.2- Peut-on établir un parallèle entre les relations du schéma relationnel et les tables de la base de données? ___________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Ouvrez la table CATEGORIE.</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">3.3 - Combien y a-t-il de champs? D'enregistrements? ___________________________________________</sc:para>
+								<sc:para xml:space="preserve">3.4·- Décrivez une catégorie en précisant les champs et les valeurs. __________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">3.5 - Quel est le domaine de valeurs de Intitulé_cat? ____________________________________________</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Fermez la table CATEGORIE. Ouvrez la table ADHERENT.</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">3.6 - Combien y a-t-il de champs? D'enregistrements? __________________________________________</sc:para>
+								<sc:para xml:space="preserve">3.7 - Quelle est la date de naissance de l'adhérent 23 ? _________________________________________</sc:para>
+								<sc:para xml:space="preserve">Quelle est l'adresse de l'adhérent 81 ?________________________________________________</sc:para>
+								<sc:para xml:space="preserve">Quel est l'index de Nathalie Chapuis ?________________________________________________</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">Utiliser la base de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Pour vous familiariser avec la base de données, Romain Rocher vous propose de saisir dans la table ADHERENT la fiche d'un nouvel adhérent (annexe 3).</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire: annexes 3 et 4 - Base info Schéma relationnel points 3, 6, 7 et 8</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource électronique : document Golf. mdb</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">4.1 - Relevez dans la fiche 1 de l'annexe 3 les éléments a priori incohérents ou invraisemblables. ____________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.2 - Saisissez la fiche 1 telle qu'elle vous est proposée en annexe 3, et relevez les messages renvoyés par le logiciel Access (En cas de problème, rectifiez selon les remarques faites dans la question précédente)..</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.3 - Quelle contrainte d'intégrité est concernée? ______________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.4·- Basculez en mode affichage Mode Création et complétez le tableau d'analyse de l'annexe 4. ____________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.5 - Après avoir rappelé les qualités d'une clé primaire, examinez comment Access les prend en compte.</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.6·- Que pensez-vous des propriétés du code postal affichées à l'écran dans la table ADHERENT? __________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.7- Corrigez éventuellement cette(ces) erreur(s), puis repassez en mode affichage Mode Feuille de données pour enregistrer le(s) changement(s). Notez l'avertissement éventuel du logiciel et expliquez-le. ________________ ________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Ouvrez la table FORMULE en mode affichage Mode Création.</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">4.8·- Le Type de Tarif_for vous semble-t-il cohérent? ___________________________________________</sc:para>
+								<sc:para xml:space="preserve">________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">4.9·- La Taille de Tarif_for vous semble-t-elle cohérente?________________________________________</sc:para>
+								<sc:para xml:space="preserve">________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Basculez en mode affichage Mode Feuille de données.</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">4.10 - Répertoriez les différentes valeurs prises par Code_for. ___________________________________</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Affichez la table ADHERENT en mode affichage Mode feuille de données et classez-la selon le champ Code_for (cliquez n'importe où dans le champ Code_for puis cliquez le bouton ).</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">4.11 - Répertoriez les différentes valeurs prises par Code_for. ____________________________________</sc:para>
+								<sc:para xml:space="preserve">4.12 - Quelle contrainte d'intégrité est respectée ? ____________________________________________</sc:para>
+								<sc:para xml:space="preserve">Fermez les tables sans enregistrer.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Compléter la base de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : annexes 3 - Base info Schéma relationnel - points 3</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">- Base info Base de données - point 2</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource électronique: document Golf.mdb</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">5 1 - Affichez les liens de la base de données (bouton de la barre d'outils ).</sc:para>
+								<sc:para xml:space="preserve">5.2 - Liez les tables ADHERENT et FORMULE en appliquant l'intégrité référentielle (avec mise à jour et effacement en cascade).</sc:para>
+								<sc:para xml:space="preserve">5.3 - Expliquez en quoi ce lien respecte la contrainte d'intégrité référentielle. __________________________</sc:para>
+								<sc:para xml:space="preserve">________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">5.4 - Liez les tables ADHERENT et CATEGORIE.</sc:para>
+								<sc:para xml:space="preserve">5.5 - Quel message renvoie Access ? ________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">5.6 - Quel genre d'erreur peut provoquer ce message ? ___________________________________________</sc:para>
+								<sc:para xml:space="preserve">____________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">5.7 - Pour vérifier, procédez à la même démarche qu'en questions 10 et 11 de la PARTIE 4.</sc:para>
+								<sc:para xml:space="preserve">5.8 - Corrigez la (les) erreur(s) potentielle(s). Fermez la (les) table(s) ouverte(s).</sc:para>
+								<sc:para xml:space="preserve">5.9 - Essayez de lier à nouveau les tables ADHERENT et CATEGORIE.</sc:para>
+								<sc:para xml:space="preserve">5.10 - Saisissez la fiche 2 telle qu'elle vous est proposée en annexe 3, validez cette saisie en passant à l'enregistrement suivant et relevez le(s) message(s) renvoyées) par le logiciel Access.</sc:para>
+								<sc:para xml:space="preserve">5.11 - De quelle règle peut-on rapprocher ce message? ___________________________________________</sc:para>
+								<sc:para xml:space="preserve">________________________________________________________________________________________________________________________________________________________________________</sc:para>
+								<sc:para xml:space="preserve">5.12 - Complétez les éléments de la fiche de manière à intégrer Germinal Ballorin dans la base de données.</sc:para>
+								<sc:para xml:space="preserve">5.13 - Saisissez la fiche 3 après avoir complété l'annexe 3.</sc:para>
+								<sc:para xml:space="preserve">Fermez la table et la base de données.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

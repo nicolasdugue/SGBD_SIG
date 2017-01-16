@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>ANNEXE 3 : Les fiches de nouveaux adhérents</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:res sc:refUri="/Cours/mldr/ressources/nouvellesFiches.png">
+							<op:resInfoM/>
+						</sp:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Chaque membre du club est automatiquement licencié auprès de la Fédération Française de Golf et bénéficie, par défaut de l'index le plus élevé : 53.5... A lui ensuite de l'améliorer (l'index 20 est meilleur que le 21!)</sc:para>
+								<sc:para xml:space="preserve">Tranches d'âge pour les catégories :</sc:para>
+								<sc:para xml:space="preserve">Né en : 2008-09-&gt;benjamin ; 2006-07-&gt;minime ; 2004-05-&gt;cadet; 2002-03-&gt;junior; femme à partir de 1970 et homme à partir de 1965-&gt;senior ; sinon-&gt;adulte.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

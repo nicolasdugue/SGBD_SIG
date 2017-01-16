@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Base info : Base de données</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>1 - Implanter une table</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">La base de données est l'implémentation concrète du schéma relationnel dans un outil comme ACCESS. Chaque <sc:inlineStyle role="emp">relation</sc:inlineStyle> donne naissance à une <sc:inlineStyle role="emp">table</sc:inlineStyle> de la base de données.</sc:para>
+										<sc:para xml:space="preserve">La relation<sc:inlineStyle role="code"> BUS (Numéro bus, Modèle_bus, Motorisation_bus, Nb_places_bus, Date_mise_serv_bus, Numéroligne)</sc:inlineStyle> engendrera la création de la table BUS, chaque attribut devenant un champ.</sc:para>
+										<sc:para xml:space="preserve">Chaque champ est défini par son nom et par son type : texte, numérique, date ou logique (booléen). </sc:para>
+										<sc:para xml:space="preserve">Pour faciliter les traitements, certaines données pourront faire l'objet de codification.</sc:para>
+										<sc:para xml:space="preserve">Exemple : pour le champ Motorisation : Diesel -&gt; D ; Gaz -&gt; G</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/Golf/enregistrementsBus.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>2 - Lier les tables</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Dans la base de données, il faudra non seulement créer la clé étrangère (pour respecter le schéma relationnel) de même Tvpe et Taille que la clé primaire à laquelle elle fait référence, mais aussi lier les deux tables pour vérifier le respect de <sc:inlineStyle role="emp">l'intégrité référentiell</sc:inlineStyle>e : toute valeur de la clé étrangère doit figurer dans la clé primaire, une clé étrangère ne peut pas prendre une valeur qui n'existe pas en clé primaire.</sc:para>
+								<sc:para xml:space="preserve">Exemple : un bus ne peut pas être affecté à la ligne 22 si celle-ci n'existe pas dans la table LIGNE.</sc:para>
+								<sc:para xml:space="preserve">Si le bus à ajouter dessert une nouvelle ligne,<sc:inlineStyle role="emp"> il conviendra donc ici de créer l'enregistrement de la table LIGNE avant de créer l'enregistrement de la table BUS.</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

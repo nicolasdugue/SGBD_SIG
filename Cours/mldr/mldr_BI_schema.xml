@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Base info : Schéma Relationnel (MLDR)</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>1 - Individu et attributs</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Chaque objet du système d'information peut être défini comme une relation entre l'individu et les attributs qui le décrivent.</sc:para>
+								<sc:para xml:space="preserve">Exemple : pour l'objet BUS, il y a une relation entre l'individu BUS et les attributs numéro, modèle, motorisation, nombre de places, date de mise en service.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>2 - Atomicité des attributs</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Chaque attribut est le plus élémentaire possible : c'est l'<sc:inlineStyle role="emp">atomicité</sc:inlineStyle>.</sc:para>
+								<sc:para xml:space="preserve">Exemple : une donnée adresse 8 rue Foch 38000 Grenoble peut etre décomposée en trois attributs élémentaires :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">adresse</sc:inlineStyle> rue 8 rue Foch</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp"><sc:inlineStyle role="emp">code posta</sc:inlineStyle></sc:inlineStyle><sc:inlineStyle role="emp">l</sc:inlineStyle> 38000</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">ville</sc:inlineStyle> Grenoble</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>3 - Clé primaire</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Un attribut permet d'identifier sans ambiguïté un individu parmi les autres : <sc:inlineStyle role="emp">c'est la clé primaire</sc:inlineStyle>. </sc:para>
+								<sc:para xml:space="preserve">Exemple : pour le BUS, c'est manifestement le numéro qui permet de repérer sans ambiguïté un bus parmi les autres bus de la compagnie.</sc:para>
+								<sc:para xml:space="preserve">La clé primaire obéit à trois règles :</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">unicité</sc:inlineStyle> : la clé primaire permet d'accéder à un individu unique, comme une clé permet d'ouvrir une porte. Deux individus ne pourront avoir la même clé primaire sinon, on les confondrait (si une clé permet d'ouvrir plusieurs portes, on ne pourra pas savoir quelle porte sera ouverte à la simple vue de la clé...) ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">existence</sc:inlineStyle> : tout individu doit pouvoir se voir affecter une valeur de clé primaire (une valeur de clé primaire ne doit pas être vide) ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">stabilité</sc:inlineStyle> : la valeur de la clé primaire d'un individu ne doit pas pouvoir changer (exemple dans le tableau du point 5: le bus GX317 mis en service le 01/03/2002 gardera toujours le numéro 25).</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">De plus, la clé primaire ne doit pas être empruntée à une autre organisation (ici, le numéro d'immatriculation automobile attribué par la Préfecture ne conviendrait donc pas).</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>4 - Présentation des relations</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La relation BUS sera représentée comme suit :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">BUS (Numéro_bus, Modèle_bus, Motorisation_bus, Nb_places_bus, Date_mise_serv_bus)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">La clé primaire est soulignée. La relation LIGNE sera représentée comme suit :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">LIGNE (Numéro-ligne, Départ_ligne, Terminus-ligne)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Afin que chaque attribut soit repéré par son nom sans aucune hésitation, on distingue ici les deux numéros pour ne pas les confondre : Numéro_bus d'une part, Numéro_ligne d'autre part. Pour mieux repérer les attributs, on peut faire suivre le nom strict de l'attribut par le nom (ou le début du nom) de la relation (comme ici avec bus ou ligne).</sc:para>
+								<sc:para xml:space="preserve">Pour faciliter leur manipulation, certains attributs peuvent se voir affecter un nom symbolique<sc:inlineStyle role="code"> (Nb_places_bus, Date_mise_serv_bus)</sc:inlineStyle>.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>5 - Tuples de la relation (occurrence)</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Il est possible de visualiser différents exemples d'une relation. </sc:para>
+										<sc:para xml:space="preserve">Ainsi, de même qu'il y a différents bus, la relation BUS prendra des valeurs pour chacun de ses attributs.</sc:para>
+										<sc:para xml:space="preserve">Une ligne de la relation = un individu = un tuple = une occurrence</sc:para>
+										<sc:para xml:space="preserve">Exemple: le bus 21 est un tuple de la relation BUS.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/Golf/enregistrementsBus.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>6 - Valeurs des attributs</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Chacun des attributs prend une valeur pour un individu (tuple) donné (le bus 21 n'a qu'une seule valeur de Numéro_bus - 21 -, une seule valeur de Modèle_bus - GX317 -, une seule valeur de Motorisation_bus Diesel-, une seule valeur de Nb_places_bus - 107 -, une seule valeur de Date_mise_serv_bus - 12/10/2000).</sc:para>
+								<sc:para xml:space="preserve">L'ensemble des valeurs que peut prendre un attribut s'appelle le <sc:inlineStyle role="emp">domaine de valeurs</sc:inlineStyle> : ce domaine peut être un ensemble de valeurs, un intervalle (de 1 à 100) ou défini par rapport à la taille (e.g. entier -&gt; nombres décimaux non possibles).</sc:para>
+								<sc:para xml:space="preserve">Exemple : Motorisation_bus ne peut prendre que Diesel ou Gaz comme valeur : le domaine de valeurs est donc <sc:inlineStyle role="code">{Diesel, Gaz}</sc:inlineStyle> ; si on affecte à Motorisation_bus la valeur Essence, on ne respecte pas la contrainte d'intégrité de domaine, Essence ne figurant pas dans le domaine de valeurs de l'attribut.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>7 - Dépendance fonctionnelle</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La connaissance d'une valeur de la clé primaire permet de connaître la valeur de chacun des attributs de l'individu : c'est une<sc:inlineStyle role="emp"> dépendance fonctionnelle</sc:inlineStyle>.</sc:para>
+								<sc:para xml:space="preserve">Exemple : connaître le numéro 25 permettra de connaître le modèle GX317, la motorisation Gaz, le nombre de places 82 et la date de mise en service 01/03/2002,</sc:para>
+								<sc:para xml:space="preserve">Il ne peut y avoir d'autre valeur pour chacun des attributs. La dépendance fonctionnelle peut être schématisée par une flèche.</sc:para>
+								<sc:para xml:space="preserve">Exemple : <sc:inlineStyle role="code">Numéro_bus -&gt; Modèle_bus</sc:inlineStyle> signifie que Modèle_bus dépend de Numéro_bus (ou que la valeur de Numéro_bus détermine celle de Modèle_bus) : la connaissance d'une valeur de Numéro_bus entraîne la connaissance d'une valeur unique du Modèle_bus.</sc:para>
+								<sc:para xml:space="preserve">Pour la relation BUS, on pourra écrire l'ensemble des dépendances fonctionnelles suivantes</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Numéro_bus -&gt; Modèle_bus</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Numéro_bus -&gt; Motorisation_bus</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Numéro_bus -&gt; Nb_places_bus</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Numéro_bus -&gt; Date_mise_serv_bus</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Les dépendances fonctionnelles permettent de construire les relations en déterminant de façon certaine la clé primaire : une relation doit n'avoir que des dépendances fonctionnelles simples et directes entre la clé primaire et les autres attributs.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Une clé primaire composé de plusieurs attributs peut être nécessaire pour obtenir, de manière unique, la valeur d'un autre attribut (cf 8.2).</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>8.1 - Lien entre les relations, Cas simple</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Il existe une interdépendance entre les deux objets BUS et LIGNE: les 150 bus desservent 17 lignes, chaque bus desservant une seule ligne. Comment la représenter dans la base de données ?</sc:para>
+								<sc:para xml:space="preserve">Si je me place du côté de la ligne, je peux avoir plusieurs bus (150 bus desservent 17 lignes) -&gt; la représentation nous obligerait à ajouter plusieurs numéros de bus (mais combien ?) dans la relation LIGNE.</sc:para>
+								<sc:para xml:space="preserve">Si, par contre, je me place dans la relation BUS, il suffit d'ajouter un attribut qui permettrait de voir à quelle ligne est affectée le bus : chaque bus dessert une seule ligne.</sc:para>
+								<sc:para xml:space="preserve">Quel attribut est le mieux placé pour montrer sans ambiguïté la ligne ? La clé primaire de la relation LIGNE, ici le Numéro_ligne.</sc:para>
+								<sc:para xml:space="preserve">Cela conduit au schéma relationnel complet:</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">BUS (Numéro_bus, Modèle bus, Motorisation_bus, Nb_places_bus, Date_mise_serv_bus, <sc:inlineStyle role="emp">#Numéro-ligne</sc:inlineStyle>) LIGNE (Numéro_ligne, Dépard_ligne, Terminus_ligne)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">L'attribut ajouté qui « représente » la clé primaire s'appelle clé étrangère.</sc:para>
+								<sc:para xml:space="preserve">Pour ne pas confondre clé primaire et clé étrangère, les attributs clés étrangères des relations peuvent être préfixés d'un #.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>8.2 - Lien entre les relations, Cas complexe</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Supposons que l'affection des bus aux lignes est la suivante: les 150 bus desservent 17 lignes, chaque bus pouvant desservir plusieurs lignes.</sc:para>
+								<sc:para xml:space="preserve">Extrait des affectations: ligne 1 : bus n° 2,14,15,16,24 ; ligne 2 : bus n° 3,11,15,18 ; ligne 3 : bus n° 1, 5,11</sc:para>
+								<sc:para xml:space="preserve">Puisqu'une ligne se voit affecter plusieurs bus, et que chaque bus peut desservir plusieurs lignes (dans cet exemple), il est difficile de trouver une représentation qui évite la répétition des attributs.</sc:para>
+								<sc:para xml:space="preserve">Dans ce cas, on ajoute une relation (Desservir) pour apparier les bus et les lignes :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">BUS (Numéro_bus, Modèle_bus, Motorisation_bus, Nb_places_bus, Date_mise_serv_bus)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">LIGNE (Numéro_ligne, Dépard_ligne, Terminus_ligne)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">DESSERVIR (#Numéro_bus, #Numéro_ligne)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Pour définir la clé primaire de la relation DESSERVIR, on utilise la clé primaire des deux autres relations.</sc:para>
+								<sc:para xml:space="preserve">Bien entendu, comme pour n'importe quelle relation, cette relation peut avoir d'autres attributs.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>9 - Présentation du schéma relationnel</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Pour une meilleure visualisation du lien entre les relations, le schéma relationnel présenté en ligne peut être visualisé sous forme graphique.</sc:para>
+										<sc:para xml:space="preserve">BUS (Numéro_bus, Modèle_bus, Motorisation_bus, Nb_places_bus, Date_mise_serv_bus)</sc:para>
+										<sc:para xml:space="preserve">LIGNE (Numéro liqne, Dépard_ligne, Terminus_ligne)</sc:para>
+										<sc:para xml:space="preserve">DESSERVIR (#Numéro_bus,# Numéro_ligne)</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/Golf/BusSchema.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

@@ -2,9 +2,8 @@
 <sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
 	<op:courseUa xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
 		<op:uM>
-			<sp:title>Modèle Logique des Données Relationnelles (MLDR)</sp:title>
-			<sp:sTitle>Modèle Logique des Données Relationnelles</sp:sTitle>
+			<sp:title>MLDR et Acces : Découverte</sp:title>
 		</op:uM>
-		<sp:courseUc sc:refUri="/Cours/mldr/mldr_c1.xml"/>
+		<sp:practUc sc:refUri="/Exercice/MLDR_1Decouverte.xml"/>
 	</op:courseUa>
 </sc:item>
