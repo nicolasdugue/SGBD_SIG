@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM/>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">L'une des activités essentielles du Golf de Champlong est d'organiser des compétitions: cela permet d'une part à ses membres de se confronter aux réalités du parcours, d'autre part d'associer des sponsors à chacune de ces manifestations, les retombées médiatiques étant doubles.</sc:para>
+						<sc:para xml:space="preserve">L'adaptation de la base de données à la gestion de ces compétitions a débuté mais n'est pas encore opérationnelle. Romain Rocher, le vice-président du golf, vous en explique le principe.</sc:para>
+						<sc:para xml:space="preserve">« Tout adhérent peut participer à de nombreuses compétitions tout au long de l'année. Elles se déroulent de mars à octobre, en principe le week-end. La base de données doit permettre de mémoriser les scores réalisés par les participants afin de pouvoir les transmettre à la Fédération Française de Golf qui calcule le nouvel index des licenciés après chaque compétition.</sc:para>
+						<sc:para xml:space="preserve">La base de données Golf2.mdb a intégré les données relatives aux premières compétitions de l'année. La coupe des imprimeurs, qui se déroule ce dimanche, sera l'occasion de finaliser le travail préparatoire déjà réalisé. Votre rôle sera double:</sc:para>
+						<sc:para xml:space="preserve">- mettre en place le suivi informatisé des compétitions,</sc:para>
+						<sc:para xml:space="preserve">- exploiter les données afin d'en obtenir des informations exploitables. "</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">ETAPE 1 : Prendre connaissance de la modélisation de la gestion des compétitions </sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : annexe 1 - Base info Schéma relationnel - points 7 et 81</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource méthodologique : Gérer les tables - Lier les tables</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource électronique: document Golf2.mdb</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">1) Ouvrez Golf2.mdb.</sc:para>
+								<sc:para xml:space="preserve">2) Quelles tables sont concernées par la phrase l'adhérent peut participer à de nombreuses compétitions? ....................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">...............................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">3) Ouvrez la table PARTICIPER et répondez aux questions suivantes :</sc:para>
+								<sc:para xml:space="preserve">a. L'adhérent 96 a-t-il participé à la compétition 2 ? ..............................................................................</sc:para>
+								<sc:para xml:space="preserve">b. Quels scores a réalisés l'adhérent 4 ? ....................................................................................................</sc:para>
+								<sc:para xml:space="preserve">c. Quel est le vainqueur de la compétition 4 ? .........................................................................................</sc:para>
+								<sc:para xml:space="preserve">4) Ouvrez éventuellement d'autres tables pour répondre aux questions suivantes:</sc:para>
+								<sc:para xml:space="preserve">a. Sébastien Brizard a-t-il participé à la compétition 3 ? .....................................................................</sc:para>
+								<sc:para xml:space="preserve">b. Quel est le nom du vainqueur de la coupe du textile? .......................................................................</sc:para>
+								<sc:para xml:space="preserve">5) À l'aide de l'annexe 1, expliquez comment se fait le lien entre les différentes tables utilisées en question 4.</sc:para>
+								<sc:para xml:space="preserve">6) Reformulez le contenu des enregistrements de (2,8,99), (4,3,108) sur le modèle suivant: (2,3,120) lors de la compétition 2, l'adhérent 3 a réalisé un score de 120.</sc:para>
+								<sc:para xml:space="preserve">..............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">7) la connaissance du numéro adhérent 1 et du score 94 permet-elle d'identifier la compétition?</sc:para>
+								<sc:para xml:space="preserve">............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">la connaissance du numéro compétition 2 et du score 120 permet-elle d'identifier l'adhérent?</sc:para>
+								<sc:para xml:space="preserve">..............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">la connaissance du numéro adhérent 1 et du numéro compétition 2 permet-elle d'identifier le score réalisé? ..............................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">8) Essayez de créer un nouvel enregistrement 2, 1, 97. Que répond ACCESS ? Pourquoi?</sc:para>
+								<sc:para xml:space="preserve">............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">9) En synthétisant les réponses aux questions 7 et 8, reformulez sous forme de dépendances fonctionnelles les identifications de la question 6. Quelles conclusions peut-on tirer en ce qui concerne la clé primaire?</sc:para>
+								<sc:para xml:space="preserve">..............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">..............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">10) Selon le schéma relationnel de l'annexe 1, quelle est la clé primaire de la relation PARTICIPER?</sc:para>
+								<sc:para xml:space="preserve">..............................................................................................................................................................................................................................................................................................................................................................................................</sc:para>
+								<sc:para xml:space="preserve">11) Complétez les tableaux d'analyse des tables de l'annexe 2 à l'aide de leur affichage en Mode Création.</sc:para>
+								<sc:para xml:space="preserve">12) Fermez les tables.</sc:para>
+								<sc:para xml:space="preserve">Affichez les relations de la base de données.</sc:para>
+								<sc:para xml:space="preserve">Ajoutez et reliez la table PARTICIPER aux- autres tables de la base de données. En cas de problème :</sc:para>
+								<sc:para xml:space="preserve">relevez le message renvoyé par le logiciel Access,</sc:para>
+								<sc:para xml:space="preserve">annulez le lien en cours,</sc:para>
+								<sc:para xml:space="preserve">s'il y a une table à modifier, réduisez la fenêtre Relations, ouvrez la table concernée,</sc:para>
+								<sc:para xml:space="preserve">modifiez le champ concerné, fermez la table et revenez dans la fenêtre Relations pour définir le lien.</sc:para>
+								<sc:para xml:space="preserve">Si le type d'un champ est modifié, ne pas oublier de mettre à jour l'annexe 2.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">ETAPE 2 : Mettre à jour la base de données </sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : annexe 3 </sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Si la table PARTICIPER contient déjà les données relatives aux quatre premiers tournois de l'année, son intégration à la base de données n'est pas complètement réalisée. On vous communique en annexe 3 les résultats de la coupe des imprimeurs.</sc:para>
+								<sc:para xml:space="preserve">Romain Rocher, qui a commencé la saisie, vous demande de terminer l'intégration de cette compétition à la base de données (dernière colonne du tableau de l'annexe 3)._____________________________________________________________________________________________________________________________________________________________________________________________________________________________</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">ETAPE 3 : Exploiter la base de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource documentaire : annexes 3 et Bases info Opérateurs relationnels et Interrogation de la base de données</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">Ressource méthodologique : Gérer les requêtes</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">La gestion des adhérents</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Un des atouts essentiels de la base de données est de pouvoir fournir rapidement des renseignements et informations synthétiques. Romain Rocher compte sur vous pour pouvoir obtenir les éléments suivants:</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve">pour travailler, le secrétaire a besoin régulièrement de la liste des adhérents (nom, prénom, numéro, adresse complète) dans l'ordre alphabétique du nom,</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">les adhérents de la Loire (numéro, nom, prénom, ville) classés par ville,</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">les jeunes (catégories benjamin à cadet inclus - codes catégorie 1 à 3) dans l'ordre décroissant des catégories (n'afficher que les nom, prénom et code de catégorie),</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">Procédez à l'analyse des demandes selon le cadre des tableaux de l'annexe 4. Vous pouvez vous appuyer sur la démarche proposée en point 2 de la Base info Interrogation de la base de données.</sc:para>
+								<sc:para xml:space="preserve">Dans la base de données, créez et enregistrez sous un nom significatif les requêtes correspondantes.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">La gestion des compétitions</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Ressource documentaire : annexes 3 et 4 - Bases info Opérateurs relationnels et Interrogation de la base de données</sc:para>
+								<sc:para xml:space="preserve">Ressource méthodologique : Gérer les requêtes</sc:para>
+								<sc:para xml:space="preserve">La coupe des imprimeurs est l'occasion de compléter l'offre de requêtes de la base de données. Obtenir rapidement pour cette compétition (numérotée 5) :</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve">les joueurs inscrits (numéro, nom, prénom, index, numéro de compétition) dans l'ordre alphabétique du nom, le classement brut (numéro, nom, prénom, index, score) dans l'ordre ....</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">pour la remise des coupes: les classements bruts masculin d'une part et féminin d'autre part, en affichant</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">chaque fois nom, prénom, score, ainsi que les jeunes juniors et benjamins) en affichant de plus pour eux l'intitulé de la catégorie serait un atout appréciable.</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">1) Procédez à l'analyse des demandes comme pour la question 1.</sc:para>
+								<sc:para xml:space="preserve">2) Créez et enregistrez sous un nom significatif les requêtes correspondantes.</sc:para>
+								<sc:para xml:space="preserve">3) Préparer la compétition suivante, l'open swing AGF, serait une suite logique ...</sc:para>
+								<sc:para xml:space="preserve">4) Créez les requêtes pour la compétition 6 (choisir deux requêtes).</sc:para>
+								<sc:para xml:space="preserve">5) Jusqu'à présent, le document de l'annexe 3 est obtenu par un savant découpage de la liste des adhérents.</sc:para>
+								<sc:para xml:space="preserve">6) Pensez-vous que parmi les requêtes que vous venez de créer, il pourrait s'en trouver une qui facilite l'obtention du document?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

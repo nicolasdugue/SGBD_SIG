@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Base info : Base de données</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>1 - La projection</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">C'est afficher tout ou une partie des attributs. Exemple: projection des attributs Numéro, Modèle et Date de mise en service de la relation BUS -&gt; affichage de ces attributs seulement.</sc:para>
+										<sc:para xml:space="preserve">Relation BUS</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Cours/mldr/ressources/projection.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>2 - La restriction (sélection)</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Restreindre, c'est ne retenir que les tuples qui répondent aux critères de restriction définis (attributs sur</sc:para>
+										<sc:para xml:space="preserve">lesquels portent la restriction + opérateurs + valeur de référence). Les opérateurs (= &lt; &gt; &lt;&gt; &gt;= &lt;= PAS</sc:para>
+										<sc:para xml:space="preserve">COMME...), pouvant être combinés avec les liens logiques ET OU, varient selon les logiciels qui gèrent la</sc:para>
+										<sc:para xml:space="preserve">base de données. C'est pour cela qu'il est préférable de reformuler l'interrogation.</sc:para>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Exemple 1:</sc:inlineStyle> obtenir les bus dont le nombre de places est supérieur à 70.</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve">langage logique nombre de places est supérieur à 70</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve">langage « symbolique» Nb_places_bus&gt; 70</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Cours/mldr/ressources/selection.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>3 - La jointure</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Cette opération consiste à relier deux relations au moyen d'un attribut commun ayant des valeurs</sc:para>
+										<sc:para xml:space="preserve">identiques dans les deux relations.</sc:para>
+										<sc:para xml:space="preserve">Exemple: obtenir la liste des bus arrivant au centre ville (afficher numéro de bus, numéro de ligne, départ</sc:para>
+										<sc:para xml:space="preserve">et terminus). </sc:para>
+										<sc:para xml:space="preserve">Trois opérations:</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> restriction des lignes dont le terminus est le centre ville -&gt; langage« symbolique » LIGNE. Terminus_ligne = "Centre ville"</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> jointure des relations BUS et LIGNE sur l'attribut Numéro_ligne afin de savoir quels bus circulent sur cette (ces) ligne(s).</sc:para>
+											</sc:listItem>
+											<sc:listItem>
+												<sc:para xml:space="preserve"> projection des attributs BUS.Numéro_bus, LIGNE.Numéro_ligne, LIGNE.Départ_ligne et LIGNE.Terminus_ligne</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+										<sc:para xml:space="preserve">Remarques : il ya plusieurs jointures dans une requête.</sc:para>
+										<sc:para xml:space="preserve">Le préfixage permet de mieux repérer les relations mises en jeu. Il est nécessaire si un attribut peut</sc:para>
+										<sc:para xml:space="preserve">appartenir à plusieurs relations (Numéro_ligne ici) afin de savoir de quelle relation il est issu.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Cours/mldr/ressources/jointure.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>
