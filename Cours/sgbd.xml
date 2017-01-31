@@ -168,8 +168,8 @@
 								<op:ueDivM>
 									<sp:title>Bases d'information</sp:title>
 								</op:ueDivM>
-								<sp:courseUc sc:refUri="/Cours/mldr/mldr_BI_schema.xml"/>
-								<sp:courseUc sc:refUri="/Cours/mldr/mldr_BI_bdd.xml"/>
+								<sp:courseUc sc:refUri="/Cours/mldr/mldr_BI_operateurs.xml"/>
+								<sp:courseUc sc:refUri="/Cours/mldr/mldr_BI_interrogation.xml"/>
 							</op:ueDiv>
 						</sp:div>
 						<sp:div>

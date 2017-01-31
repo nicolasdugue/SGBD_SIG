@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Base info : Interrogation des bases de données</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>1 - Les requêtes</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Pour obtenir des renseignements de la base de données, on pose des questions (requêtes) où les opérateurs relationnels (projection, restriction, jointure) sont mis en œuvre. Ces opérateurs peuvent bien sûr être combinés, et éventuellement associés au tri. Ces requêtes peuvent être élaborées dès que le schéma relationnel est établi.</sc:para>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Tri</sc:inlineStyle></sc:para>
+										<sc:para xml:space="preserve">Trier, c'est classer une relation selon un ou plusieurs critères (= critère de tri + ordre de classement). Critères de tri &lt;-&gt; attributs de la relation</sc:para>
+										<sc:para xml:space="preserve">Ordres de tri -&gt; croissant, décroissant (on parle d'ordre chronologique si l'attribut-critère est de type Date).</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Cours/mldr/ressources/selectiontri.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>2 - L'analyse des requêtes</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Afin d'optimiser la création des requêtes, il est peut être utile d'établir un tableau d'analyse de la requête qui permet de repérer les opérateurs relationnels, relations et attributs mis en œuvre.</sc:para>
+										<sc:para xml:space="preserve">L'analyse est réalisée dès que le schéma relationnel est établi. Sa présentation graphique facilite cette analyse.</sc:para>
+										<sc:para xml:space="preserve">Exemple: obtenir la liste des bus (numéro, modèle, motorisation) fonctionnant au gaz classés selon l'ordre alphabétique de la motorisation.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Cours/mldr/ressources/mldrBusDesservir.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>3 - La jointure</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:res sc:refUri="/Cours/mldr/ressources/AnalyseRequete1.png">
+							<op:resInfoM/>
+						</sp:res>
+						<sp:res sc:refUri="/Cours/mldr/ressources/AnalyseRequete2.png">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>
