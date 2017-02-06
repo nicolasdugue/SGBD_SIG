@@ -188,7 +188,7 @@
 							<sp:title>Requêtes : Q.B.E. et SQL</sp:title>
 							<sp:sTitle>SQL</sp:sTitle>
 						</op:ueDivM>
-						<sp:practUc sc:refUri="/Exercice/MLDR_2Analyse.xml"/>
+						<sp:practUc sc:refUri="/Exercice/MLDR_3SQL.xml"/>
 						<sp:div>
 							<op:ueDiv>
 								<op:ueDivM>

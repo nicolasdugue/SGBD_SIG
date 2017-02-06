@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>SQL - NetProvence</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>lft</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Net_Provence est un réseau d'agences de voyage né en Provence, il y a quelques années, et qui se développe actuellement dans toute la France. Le système de réservation est géré par un SGBDR. Chaque agence de voyage dispose, pour un voyage donné, d'un nombre de places limité. Il vous est demandé d'interroger la base existante en créant des requêtes en SQL.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Cours/mldr/ressources/netprovence_mldr.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Clients(Code_client</sc:inlineStyle>,Nom_client,Prénom_client,Adresse_rue_client,CP_client,Ville_client,#Code_agence)</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Agence de voyage(Code_agence,</sc:inlineStyle> Nom_agence, Adresse_agence, CP_agence, Ville_agence)</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Nombre de places proposées par agence(#code_agence,#num_voyage</sc:inlineStyle>, Nombre_de_place_proposées)</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Réservations(N° réservation</sc:inlineStyle>, Date réservation,#Code client)</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Lignes réservation(#Num_réservation,#Num_voyage</sc:inlineStyle>, Nombre_places_réservées,Tx_de_remise)</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Voyages(Num_voyage</sc:inlineStyle>, Nom_voyage,Date_départ,Durée_voyage,Prix_voyage)</sc:para>
+					</op:txt>
+				</sp:txt>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Pour chacune des questions ci-dessous, reportez vous aux bases d'information SQL pour formuler les requêtes correspondantes et ainsi interroger la base de données présentée ci-dessus. Si vous bloquez, vous pouvez également formuler la requête avec l'interface d'Access puis passer en ode d'affichage SQL.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes Simples</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">0001-liste des clients</sc:para>
+								<sc:para xml:space="preserve">0002-Liste des voyages</sc:para>
+								<sc:para xml:space="preserve">0003-liste des agences</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes avec tri</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">0004-Liste des clients code, nom(tri croissant), prénom, ville</sc:para>
+								<sc:para xml:space="preserve">0005-liste des Agences (tri sur le nom de l'agence)</sc:para>
+								<sc:para xml:space="preserve">0006-Liste des clients en remplaçant les intitulés de colonnes nom_client en NOMS, prénom_client en Prénoms, Adresses, Villes</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes avec Sélection</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">0007-Liste des clients de PARIS (tri croissant sur le nom du client)</sc:para>
+								<sc:para xml:space="preserve">0008-Liste des agences des Bouches du Rhône (tri sur le CP)</sc:para>
+								<sc:para xml:space="preserve">0009-Liste des clients de QUONS LES PELLES OU GROSLAND (tri sur le nom du client)</sc:para>
+								<sc:para xml:space="preserve">0010-Afficher le nom et prénom des clients N°17 à 19 (en indiquant les codes postaux)</sc:para>
+								<sc:para xml:space="preserve">0011-liste des voyages à PARIS ou MADRID en affichant le nom de voyage avec la durée et la date du voyage (tri date départ)</sc:para>
+								<sc:para xml:space="preserve">0012-afficher la liste des voyages (Nom_voyage) sauf le voyage à destination de ZURICH (tri sur le nom du voyage)</sc:para>
+								<sc:para xml:space="preserve">0013-Liste des clients dont le nom commence par la lettre W en changeant l'intitulé de la colonne par NOMS LETTRE W(tri nom cli)</sc:para>
+								<sc:para xml:space="preserve">0014-Voyages dont la durée est &gt;=15 jours (tri croissant sur la durée du voyage)</sc:para>
+								<sc:para xml:space="preserve">0015- Liste des voyages proposés en 2015 dont la durée est &gt;= 9 jours (tri croissant sur la propriété date_départ)</sc:para>
+								<sc:para xml:space="preserve">0016-LISTE DES VOYAGES DONT LE PRIX EST COMPRIS ENTRE 1000€ ET 2400€ (tri croissant sur la date-départ)</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Comptage, Somme, Moyenne, Min, Max</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">0017-Prix du voyage le plus cher (afficher uniquement cette donnée)</sc:para>
+								<sc:para xml:space="preserve">0018-Prix du voyage le plus faible (afficher uniquement cette donnée)</sc:para>
+								<sc:para xml:space="preserve">0019-Nombre de clients (le résultat doit être stocké sous l'intitulé Nombre de clients Net_Provence)</sc:para>
+								<sc:para xml:space="preserve">0020-Nombre de voyages</sc:para>
+								<sc:para xml:space="preserve">0021-Nombre total d'Agences</sc:para>
+								<sc:para xml:space="preserve">0022-Prix moyen des voyages Net Provence</sc:para>
+								<sc:para xml:space="preserve">0023-Prix moyen des voyages en fonction de la durée des voyages</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes complexes</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">0024-Nbres de places proposées par voyage et par agence</sc:para>
+								<sc:para xml:space="preserve">0025-MONTANT DÛ par client</sc:para>
+								<sc:para xml:space="preserve">0026-NB TOTAL DE PLACES PROPOSEES PAR VOYAGE TRI SUR LE TOTAL</sc:para>
+								<sc:para xml:space="preserve">0027-Réservations du 01/01/2017 au 28/02/2017 avec le nom des clients</sc:para>
+								<sc:para xml:space="preserve">0028-Total des places proposées par agence</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>
