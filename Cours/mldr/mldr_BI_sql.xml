@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Base info : SQL</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Les exemples ci-dessous s'appuient sur le schéma relationnel suivant :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">CLIENT (Num_cli, Nom_cli, Adrue_cli, Cp_cli, Ville_cli, Paiement_cli, Date_1ere_commande, Code_type#)</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="quote">TYPE CLIENT (Code_type, Intitule_type)</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>1- Présentation</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Le langage SQL (Structured Query Language -&gt; Langage structuré d'interrogation ou de requête) permet de manipuler les bases de données afin d'en extraire des informations résultantes mais aussi de créer des tables, ajouter, modifier supprimer des enregistrements, créer des formulaires, etc. C'est un standard international qui permet de manipuler une base de données, quel que soit le logiciel qui la gère. </sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>2 - Règles de syntaxe et projection</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Toute commande SQL dont le but est d'interroger une base de données commence par l'ordre SELECT. Certains logiciels, comme Access, ponctuent toute requête SQL avec un « ; ». Mais cela n'est pas obligatoire. Les commandes SQL et les tables (entités) sont en majuscule.</sc:para>
+								<sc:para xml:space="preserve">Après la 1re ligne, chaque ligne de la commande commence par une clause de l'ordre SELECT selon l'ordre suivant:</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> &lt;-&gt; projection</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> &lt;-&gt; table(s) d'où sont issus les champs</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> &lt;-&gt; critères de restriction et de jointure <sc:inlineStyle role="emp">ORDER BY</sc:inlineStyle> &lt;-&gt; critère de tri</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> S'il n'y a pas de restriction ni de jointure pour une requête, la ligne WHERE n'existe pas, la ligne ORDER BY passe en troisième ligne.</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> Sans restriction ni jointure, ni tri, seules deux lignes sont utiles: SELECT et FROM.</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> Les champs projetés, les tables et les critères de tri sont séparés par des virgules s'il y a lieu.</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> Les champs peuvent être préfixés avec le nom de la table à laquelle ils appartiennent pour éviter de la confondre (c'est indispensable si deux champs de même nom sont utilisés, Code_type par exemple).</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"> Un espace est nécessaire après un mot clé pour qu'il soit identifié par SQL d'ACCESS.</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">liste des clients (numéro, nom, ville) classés dans l'ordre alphabétique du nom :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, Ville_cli</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">ORDER BY</sc:inlineStyle> Nom_cli;</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>3 - Restriction</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Champ Numérique</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Liste des clients (numéro, nom, mode de paiement) réglant au comptant (codé 1)</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELEC</sc:inlineStyle>T Num_cli, Nom_cli, Paiementcli</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> Paiementcli =1;</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Champ Texte</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Liste des clients (numéro, nom, code postal, mode de paiement) de l'Ain</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, Cp_cli, Paiementcli</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHER</sc:inlineStyle>E Cp_cli <sc:inlineStyle role="emp">LIKE</sc:inlineStyle> "01 * ";</sc:para>
+								<sc:para xml:space="preserve">Lorsque le champ est de type Texte (ici, Cp_cli est de type Texte), SQL entoure la valeur de référence de "" afin d'en délimiter le contenu. SQL accepte le caractère générique * (qui remplace toute combinaison de caractères).</sc:para>
+								<sc:para xml:space="preserve">Nota : ACCESS accepte le symbole = comme opérateur pour les champs de type Texte (si Paiementcli est de type Texte, WHERE paiementcli=" 1 " sera accepté ... mais se méfier avec Access 2003).</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Champ Date</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Liste des nouveaux clients (numéro, nom, date de 1re commande) depuis le 1/1/2016</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, Date_1ere_commande</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> Date_1ere_commande&gt;=#1/1/2016#;</sc:para>
+								<sc:para xml:space="preserve">Lorsque le champ est de type Date, SQL entoure la valeur de référence de # # afin d'en délimiter le contenu.</sc:para>
+								<sc:para xml:space="preserve">Nota: ceci est propre au SQL d'ACCESS.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Lien entre deux critères de restriction</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Liste des clients (numéro, nom, code postal, mode de paiement) de l'Ain réglant au comptant (codé 1)</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, Cp_cli, Paiementcli</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> Cp_cli Like "01*" <sc:inlineStyle role="emp">AND</sc:inlineStyle> Paiementcli=1;</sc:para>
+								<sc:para xml:space="preserve">Le lien AND traduit le ET ; le OU est traduit par OR (voir ci-après).</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Lien entre deux valeurs de référence</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Liste des clients (numéro, nom, code postal, mode de paiement) de l'Ain et de la Loire</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, Cp_cli, PaiemenCcli</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> Cp_cli LIKE "01*" <sc:inlineStyle role="emp">OR</sc:inlineStyle> Cp_cli LIKE "42* ";</sc:para>
+								<sc:para xml:space="preserve">Nota : le Et du langage naturel se traduit par un OU logique (un code postal ne peut pas débuter par 01 ET par 42)</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Liste des clients (numéro, nom, date de 1re commande) de l'année 2016</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom-cli, Date_1ere_commande</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> Date_1 ere_commande&gt;=#31/12/2015# <sc:inlineStyle role="emp">AND</sc:inlineStyle> Date_1ere_commande&lt;#01/01/2017#;</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>4 – Tri</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Liste des clients (numéro, nom, conditions de paiement) classés dans l'ordre des conditions de paiement</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, PaiemenCcli</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">ORDER BY</sc:inlineStyle> Paiementcli <sc:inlineStyle role="emp">ASC</sc:inlineStyle>;</sc:para>
+								<sc:para xml:space="preserve">L'ordre croissant est traduit par <sc:inlineStyle role="emp">ASC</sc:inlineStyle>.</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Liste des nouveaux clients (numéro, nom, date de 1re commande) depuis le 01/01/2016, classés dans l'ordre chronologique inverse</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> Num_cli, Nom_cli, Date_1ere_commande</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE</sc:inlineStyle> Date_1ere_commande&gt;=#31/12/2015#</sc:para>
+								<sc:para xml:space="preserve"> <sc:inlineStyle role="emp">ORDER BY</sc:inlineStyle> Date_1ere_commande<sc:inlineStyle role="emp"> DESC</sc:inlineStyle>;</sc:para>
+								<sc:para xml:space="preserve">Pour l'ordre décroissant, mentionner <sc:inlineStyle role="emp">DESC</sc:inlineStyle> après le critère de tri (si deux critères, les séparer par une virgule). En l'absence de paramètre ASC ou DESC dans ORDER BY, c'est l'ordre croissant qui est retenu par défaut.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>5- Jointure</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">liste des grossistes (numéro, nom, intitulé du type de client) codés G en Code_Type</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">SELECT</sc:inlineStyle> <sc:inlineStyle role="emp">CLIENT.</sc:inlineStyle>Num_cli, <sc:inlineStyle role="emp">CLlENT.</sc:inlineStyle>Nom_cli, <sc:inlineStyle role="emp">TYPE_CLIENT</sc:inlineStyle>.intitulé_type</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">FROM</sc:inlineStyle> CLIENT, TYPE_CLIENT</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">WHERE CLIENT.Code_type = TYPECLIENT.Code_type</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">AND</sc:inlineStyle> CLIENT.Code_type = "G";</sc:para>
+								<sc:para xml:space="preserve">Lorsqu'il y a jointure entre deux tables, les tables sont mentionnées en ligne FROM et le critère de jointure fait partie des éléments de la ligne WHERE, lié par AND aux autres critères de restriction.</sc:para>
+								<sc:para xml:space="preserve">Le préfixage est nécessaire pour préciser de quelle table sont issus certains champs lorsqu'ils peuvent être issus de plusieurs tables (ici Code_type). Il sera obligatoire pour la jointure. Ici, il est aussi nécessaire pour la restriction.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

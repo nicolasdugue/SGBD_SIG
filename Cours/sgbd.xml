@@ -182,6 +182,24 @@
 						</sp:div>
 					</op:ueDiv>
 				</sp:div>
+				<sp:div>
+					<op:ueDiv>
+						<op:ueDivM>
+							<sp:title>Requêtes : Q.B.E. et SQL</sp:title>
+							<sp:sTitle>SQL</sp:sTitle>
+						</op:ueDivM>
+						<sp:practUc sc:refUri="/Exercice/MLDR_2Analyse.xml"/>
+						<sp:div>
+							<op:ueDiv>
+								<op:ueDivM>
+									<sp:title>Bases d'information</sp:title>
+								</op:ueDivM>
+								<sp:courseUc sc:refUri="/Cours/mldr/mldr_BI_sql.xml"/>
+								<sp:courseUc sc:refUri="/Cours/mldr/mldr_BI_sql_short.xml"/>
+							</op:ueDiv>
+						</sp:div>
+					</op:ueDiv>
+				</sp:div>
 				<sp:courseUa sc:refUri="/Cours/exoRab/rab.xml"/>
 			</op:ueDiv>
 		</sp:div>
