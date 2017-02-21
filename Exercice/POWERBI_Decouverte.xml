@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Découverte de Power BI</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Pour analyser et visualiser les données stockées dans ACCESS, il est possible de "brancher" l'outil de Business Intelligence Power BI à ACCESS.</sc:para>
+						<sc:para xml:space="preserve">Pour des raisons de simplicité, nous allons dans un premier temps voir comment utiliser Power BI dans sa version online.</sc:para>
+						<sc:para xml:space="preserve">Nous allons étudier des données issues de data.gouv.fr sur les tournages de film à Paris et créer un tableau d'analyse qu'il sera possible de partager sur internet comme celui-ci : <sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://app.powerbi.com/view?r=eyJrIjoiZDk0ZjE0NDgtNWE5OC00NjRjLWJhNGUtZDZmNTJiNzQ3ZGRmIiwidCI6ImZlZGFmZGQ0LWU2ZWEtNDMxMS1hMTBjLTRhODE4NzgzYWE3MyIsImMiOjh9</sp:url></op:urlM>Dashboard d'analyse des tournages</sc:phrase></sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Importation des données ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve"><sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://powerbi.microsoft.com</sp:url></op:urlM></sc:phrase>Tout d'abord, il s'agit de se connecter à Power BI en ligne :<sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://powerbi.microsoft.com</sp:url></op:urlM> https://powerbi.microsoft.com</sc:phrase></sc:para>
+					</op:txt>
+				</sp:txt>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Ensuite, nous allons charger les données à analyser dans Power BI.</sc:para>
+								<sc:para xml:space="preserve">Les données à télécharger sont <sc:uLink role="docLnk" sc:refUri="/SupportSGBD/tournagesdefilmsparis.csv">ICI</sc:uLink>.</sc:para>
+								<sc:para xml:space="preserve">Une fois téléchargées, il s'agit de les importer dans Power BI.</sc:para>
+								<sc:para xml:space="preserve">Pour cela, cliquer sur "Obtenir des données" comme sur l'image de droite.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/MenuGaucheObtenirData.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>lft</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Puis sélectionner l'obtention des données par "Fichiers" en cliquant sur "Obtenir" (encadré en noir sur l'image de gauche).</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/SelectionnerFichier.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Enfin, sélectionner "Fichier Local" (grisé sur l'image de droite) et sélectionner le fichier téléchargé sur votre ordinateur.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/SelectionnerFichierLocal.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>lft</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Une fois les données importées, vous devriez voir apparaître le nouveau jeu de données comme sur l'image de gauche.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/MenuGaucheDataObtenue.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Explorer les données sous forme de Tableau ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Nous avons importé les données. Avant d'aller plus loin dans l'analyse et la visualisation de ces données, nous allons commencer par nous familiariser avec ces données.</sc:para>
+								<sc:para xml:space="preserve">Dans un premier temps, double-cliquez sur le jeu de données dans le menu à gauche. Vous voyez apparaître une fenêtre avec à droite un menu tel que celui présenté dans l'image à droite.</sc:para>
+								<sc:para xml:space="preserve">Les différents parties de ce menu sont les suivantes : </sc:para>
+								<sc:orderedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve">La liste des différentes visualisations utilisables ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">La zone de paramétrage des visualisations ;</sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve">Les tables et leurs colonnes. Ici, une seule table "tournagedefilms" avec ses 18 colonnes.</sc:para>
+									</sc:listItem>
+								</sc:orderedList>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/MenuDroite.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos/>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Pour explorer les données, il est possible d'utiliser la visualisation "Table" (en rouge en haut à gauche dans l'image de gauche), puis de glisser n'importe quelle colonne dans la Zone 2 du menu de droite (en rouge au milieu à gauche). Il est possible de glisser plusieurs colonnes.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/Table.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Afficher en utilisant la visualisation "Table" de Power BI la durée en mois des tournages. Que constatez-vous ? Cela est-il cohérent avec les dates de début et de fin de tournage ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Peut-être.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Utiliser l'histogramme ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Bon, puisque le tout, c'est pas de faire des tableaux Excel mais des visualisations qui ont de la gueule de façon à épater votre manager qui est impressionné dès que y a de la couleur, on va passer aux histogrammes. Ce sera déjà un début.</sc:para>
+								<sc:para xml:space="preserve">Pour réaliser un histogramme, il faut cliquer sur la visualisation qui a une tête d'histogramme (encadrée en jaune dans l'image de droite). Puis ensuite, il s'agit de renseigner ce que l'on souhaite visualiser dans l'histogramme.</sc:para>
+								<sc:para xml:space="preserve">En l'occurrence, on s'intéresse ici au nombre de films tournés par année. On choisit donc la colonne "Année Début" que l'on renseigne dans "Axe" (zone 2), et la colonne "titre" qui va nous fournir la "valeur" (zone 2) à étudier en fonction de notre axe.</sc:para>
+								<sc:para xml:space="preserve">Automatiquement, Power BI calcule le nombre de titres par Année.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/Histogramme.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">En utilisant l'outil histogramme, afficher le nombre de films tournés en fonction du mois de début. Existe-t-il une tendance ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Encore de l'histogramme</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Parce que l'histogramme c'est toujours efficace mais que votre manager n'a pas encore l'air suffisamment impressionné, on va passer au cran supérieur coté histogramme.</sc:para>
+								<sc:para xml:space="preserve">Il s'agit maintenant d'afficher le nombre de titres par année et en fonction du cadre dans lequel ils ont été tournés.</sc:para>
+								<sc:para xml:space="preserve">Pour cela, on va ajouter la colonne cadre (zone 3) dans le champ "Légende" de la zone de paramétrage de nos visualisations (zone 2) comme indiqué dans l'image de droite.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/histoCadreMethode.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:res sc:refUri="/Image/PowerBI/histoCadre.png">
+					<op:resInfoM/>
+				</sp:res>
+			</op:res>
+		</sp:desc>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Un petit dernier coup d'histogramme</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>lft</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Votre manager est tellement impressionné par vos compétences de Data scientist qu'il en veut plus. Pour monter d'un cran encore, il s'agit maintenant d'afficher le nombre de titres par année et pas arrondissement. En revanche, pour que la visualisation soit lisible, on ajoute un filtre sur les arrondissements à considérer : de 75000 à 75010. Pour cela, on ajoute un filtre (zone 2) sur la colonne arrondissement comme indiqué sur l'image de gauche</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/filtreArrondissement.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">En utilisant la méthode exposée ci-dessus, afficher par année le nombre de titres tournés par des réalisteurs dont le nom ou le prénom contient "tar".</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Treemap ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:res sc:refUri="/Image/dilbert_piechart1.gif">
+					<op:resInfoM/>
+				</sp:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Il est temps d'achever votre manager en montrant à toute la boite que vous avez un niveau de malade et que c'est à vous que revient le poste de manager. Pour cela, l'arme ultime, c'est le TreeMap (bien plus fort que le pie chart). En pratique, c'est pas vraiment plus pratique qu'un histogramme, mais les gens apprécient, ça fait des petits carrés rigolos.</sc:para>
+								<sc:para xml:space="preserve">Bon, un treemap, c'est quoi concrètement ? C'est ce qu'il y a à gauche. Ca va nous permettre de visualiser le nombre de titres par arrondissement alors que le nombre d'arrondissements est très élevé. En gros, c'est comme un histogramme qui s'utilise lorsque l'axe prend un nombre de valeur très élevé.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/treemap.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>lft</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Pour réaliser votre Treemap, cliquer sur l'icone de visualisation (zone 1) Treemap (voir image de droite) puis renseigner dans la zone2 la colonne arrondissement comme "groupe" et le nombre de titres en "valeur" (voir image de gauche).</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/treemapDone.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Renseignez la colonne réalisateur dans le champ Info Bulles de la zone 2 de paramétrage de votre visualisation. Que se passe-t-il ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">En utilisant le treemap, quels sont les réalisateurs ayant tourné le plus de titres ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Carte interactive ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:res sc:refUri="/Image/dilbert_piechart2.gif">
+					<op:resInfoM/>
+				</sp:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Le treemap vous a valu la place de manager... A quand un poste de direction ? C'est le moment de briller avec une carte interactive ! Pas toujours utile, mais classe en toute circonstance.</sc:para>
+								<sc:para xml:space="preserve">Ici, nous allons afficher les lieux de tournages des films tournés à Paris en utilisant les coordonnées GPS. Il s'agit donc de choisir la visualisation Carte en zone 1 (Surtout pas carte Choroplèthe), et de renseigner zone 2 la latitude, la longitude.</sc:para>
+								<sc:para xml:space="preserve">On voit des points s'afficher sur la carte. C'est cool.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/mapGps.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Que constatez-vous concernant ces films tournés à Paris ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Les données fournies par le gouvernement sont vraiment de mauvaise qualité.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Visualisations dynamiques ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>lft</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Si vous ne l'aviez pas constaté, vos visualisations sont dynamiques. Il est possible de cliquer sur une barre de l'histogramme, sur un rectangle du treemap ou sur un point de la carte et  toutes les visualisations changent à coté #PoudreAuxYeux</sc:para>
+								<sc:para xml:space="preserve">En revanche, pour simplifier cette forme d'interaction avec les données, il est également possible de fournir des boutons de sélection plus explicites que l'on appelle "Segments".</sc:para>
+								<sc:para xml:space="preserve">Nous allons par exemple ici proposer un moyen de filtrer les données selon la colonne "cadre". Pour cela, choisir la visualisation "Segments" en zone 1 et renseigner la colonne cadre dans le cadre Champ situé zone2.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/segmentCadre.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Partager votre Rapport ----------------------------------------------------------------------</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Si vous sauvegardez en utilisant Crtl + S ou Fichier&gt; Enregistrer, vous pouvez donner un nom à votre rapport.</sc:para>
+								<sc:para xml:space="preserve">En cliquant sur Fichier &gt; Publier sur le web, il vous est possible d'obtenir le lien pour partager votre dashboard sur internet, par mail. Ces rapports sont mêmes consultables sur téléphone #JeSuis2.0</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/PowerBI/sauvegarde.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Avec vos connaissances d'expert Power BI, reconstituer le Rapport suivant : <sc:phrase role="url"><op:urlM xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"><sp:url>https://app.powerbi.com/view?r=eyJrIjoiZDk0ZjE0NDgtNWE5OC00NjRjLWJhNGUtZDZmNTJiNzQ3ZGRmIiwidCI6ImZlZGFmZGQ0LWU2ZWEtNDMxMS1hMTBjLTRhODE4NzgzYWE3MyIsImMiOjh9</sp:url></op:urlM>Dashboard d'analyse des tournages</sc:phrase></sc:para>
+								<sc:para xml:space="preserve"> Celui-ci est sur deux pages. Vous pouvez créer des pages en cliquant sur le "+" en bas de la fenêtre.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

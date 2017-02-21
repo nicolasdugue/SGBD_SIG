@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Analyser et visualiser avec Power BI</sp:title>
+		</op:uM>
+		<sp:practUc sc:refUri="/Exercice/POWERBI_Decouverte.xml"/>
+		<sp:practUc>
+			<op:practUc>
+				<op:exeM>
+					<sp:title>Approfondir l'utilisation de Power BI</sp:title>
+				</op:exeM>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Voici une liste de jeux de données proposés par le gouvernement formaté pour être utilisés avec power BI :</sc:para>
+								<sc:itemizedList>
+									<sc:listItem>
+										<sc:para xml:space="preserve"><sc:uLink role="docLnk" sc:refUri="/SupportSGBD/opendatacamp-ccifemmes.csv">Représentation féminine au sein des chambres consulaires territoriales</sc:uLink></sc:para>
+										<sc:para xml:space="preserve">Ce jeu de données est décrit ici <sc:phrase role="url"><op:urlM><sp:url>https://www.data.gouv.fr/fr/datasets/representation-feminine-au-sein-des-chambres-consulaires-territoriales-ccit/</sp:url></op:urlM>: https://www.data.gouv.fr/fr/datasets/representation-feminine-au-sein-des-chambres-consulaires-territoriales-ccit/</sc:phrase></sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"><sc:uLink role="docLnk" sc:refUri="/SupportSGBD/fr-esr-insertion_professionnelle-dut_donnees_nationales.csv">Insertion professionnelle des diplômé.e.s de DUT</sc:uLink></sc:para>
+										<sc:para xml:space="preserve">décrit ici : <sc:uLink role="docLnk" sc:refUri="/Cours/powerbi/null"><sc:phrase role="url"><op:urlM><sp:url>https://www.data.gouv.fr/fr/datasets/insertion-professionnelle-des-diplome-e-s-de-diplome-universitaire-de-technologie-dut-en-universites-et-etablissements-assimiles-donnees-nationales-par-disciplines-detaillees/</sp:url></op:urlM>https://www.data.gouv.fr/fr/datasets/insertion-professionnelle-des-diplome-e-s-de-diplome-universitaire-de-technologie-dut-en-universites-et-etablissements-assimiles-donnees-nationales-par-disciplines-detaillees/</sc:phrase></sc:uLink></sc:para>
+									</sc:listItem>
+									<sc:listItem>
+										<sc:para xml:space="preserve"><sc:uLink role="docLnk" sc:refUri="/SupportSGBD/fr-esr-rd-moyens-entreprises-branche.csv">Les moyens consacrés à la R&amp;D</sc:uLink></sc:para>
+										<sc:para xml:space="preserve">décrit ici : <sc:phrase role="url"><op:urlM><sp:url>https://www.data.gouv.fr/fr/datasets/les-moyens-consacres-a-la-r-d-les-entreprises-par-branche-dactivite/</sp:url></op:urlM>https://www.data.gouv.fr/fr/datasets/les-moyens-consacres-a-la-r-d-les-entreprises-par-branche-dactivite/</sc:phrase></sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+								<sc:para xml:space="preserve">Choisissez l'un de ces jeux de données et créer un rapport qui présente le résultat de vos analyses de ces données.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUc>
+		</sp:practUc>
+	</op:courseUa>
+</sc:item>
