@@ -75,15 +75,15 @@
 						<sp:txt>
 							<op:txt>
 								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes avec Sélection</sc:inlineStyle></sc:para>
-								<sc:para xml:space="preserve">0007-Liste des clients de PARIS (tri croissant sur le nom du client)</sc:para>
-								<sc:para xml:space="preserve">0008-Liste des agences des Bouches du Rhône (tri sur le CP)</sc:para>
+								<sc:para xml:space="preserve">0007-Liste des clients de Vatan (tri croissant sur le nom du client)</sc:para>
+								<sc:para xml:space="preserve">0008-Liste des agences des Bouches du Rhône (tri sur le CP, 13---)</sc:para>
 								<sc:para xml:space="preserve">0009-Liste des clients de QUONS LES PELLES OU GROSLAND (tri sur le nom du client)</sc:para>
 								<sc:para xml:space="preserve">0010-Afficher le nom et prénom des clients N°17 à 19 (en indiquant les codes postaux)</sc:para>
 								<sc:para xml:space="preserve">0011-liste des voyages à PARIS ou MADRID en affichant le nom de voyage avec la durée et la date du voyage (tri date départ)</sc:para>
 								<sc:para xml:space="preserve">0012-afficher la liste des voyages (Nom_voyage) sauf le voyage à destination de ZURICH (tri sur le nom du voyage)</sc:para>
-								<sc:para xml:space="preserve">0013-Liste des clients dont le nom commence par la lettre W en changeant l'intitulé de la colonne par NOMS LETTRE W(tri nom cli)</sc:para>
+								<sc:para xml:space="preserve">0013-Liste des clients dont le nom commence par la lettre T en changeant l'intitulé de la colonne par NOMS LETTRE T (tri nom cli)</sc:para>
 								<sc:para xml:space="preserve">0014-Voyages dont la durée est &gt;=15 jours (tri croissant sur la durée du voyage)</sc:para>
-								<sc:para xml:space="preserve">0015- Liste des voyages proposés en 2015 dont la durée est &gt;= 9 jours (tri croissant sur la propriété date_départ)</sc:para>
+								<sc:para xml:space="preserve">0015- Liste des voyages proposés en 2016 dont la durée est &gt;= 9 jours (tri croissant sur la propriété date_départ)</sc:para>
 								<sc:para xml:space="preserve">0016-LISTE DES VOYAGES DONT LE PRIX EST COMPRIS ENTRE 1000€ ET 2400€ (tri croissant sur la date-départ)</sc:para>
 							</op:txt>
 						</sp:txt>
@@ -117,12 +117,14 @@
 					<op:res>
 						<sp:txt>
 							<op:txt>
-								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes complexes</sc:inlineStyle></sc:para>
-								<sc:para xml:space="preserve">0024-Nbres de places proposées par voyage et par agence</sc:para>
-								<sc:para xml:space="preserve">0025-MONTANT DÛ par client</sc:para>
-								<sc:para xml:space="preserve">0026-NB TOTAL DE PLACES PROPOSEES PAR VOYAGE TRI SUR LE TOTAL</sc:para>
-								<sc:para xml:space="preserve">0027-Réservations du 01/01/2017 au 28/02/2017 avec le nom des clients</sc:para>
-								<sc:para xml:space="preserve">0028-Total des places proposées par agence</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Requêtes avec jointure</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">0024-Liste des clients en indiquant leur agence</sc:para>
+								<sc:para xml:space="preserve">0025-Nbres de places proposées par voyage et par agence (nom d'agence, et nom du voyage)</sc:para>
+								<sc:para xml:space="preserve">0026-Liste des clients ayant fait une réservation pour 2016</sc:para>
+								<sc:para xml:space="preserve">0027-MONTANT DÛ par client</sc:para>
+								<sc:para xml:space="preserve">0028-NB TOTAL DE PLACES PROPOSEES PAR VOYAGE TRI SUR LE TOTAL</sc:para>
+								<sc:para xml:space="preserve">0029-Réservations du 01/01/2017 au 28/02/2017 avec le nom des clients</sc:para>
+								<sc:para xml:space="preserve">0030-Total des places proposées par agence</sc:para>
 							</op:txt>
 						</sp:txt>
 					</op:res>

@@ -194,6 +194,7 @@
 						</sp:div>
 					</op:ueDiv>
 				</sp:div>
+				<sp:courseUa sc:refUri="/Cours/powerbi/powerbi.xml"/>
 				<sp:courseUa sc:refUri="/Cours/exoRab/rab.xml"/>
 			</op:ueDiv>
 		</sp:div>
