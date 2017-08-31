@@ -9,7 +9,6 @@
 			<op:ueDiv>
 				<op:ueDivM>
 					<sp:title>Systeme de gestion de base de données - Modélisation MERISE</sp:title>
-					<sp:sTitle>S3 - Système de gestion de base de données</sp:sTitle>
 				</op:ueDivM>
 				<sp:intro>
 					<op:res>
@@ -42,13 +41,13 @@
 				<sp:courseUa sc:refUri="/Cours/sig/si.xml"/>
 				<sp:courseUc sc:refUri="/Cours/merise/merise.xml"/>
 				<sp:courseUa sc:refUri="/Cours/flux/flux.xml"/>
+				<sp:courseUa sc:refUri="/Cours/mct/mct.xml"/>
 			</op:ueDiv>
 		</sp:div>
 		<sp:div>
 			<op:ueDiv>
 				<op:ueDivM>
-					<sp:title>Systeme d'Information de Gestion</sp:title>
-					<sp:sTitle>S4 - Systeme d'Information de Gestion</sp:sTitle>
+					<sp:title>Systeme d'Information de Gestion - Access et SQL</sp:title>
 				</op:ueDivM>
 				<sp:intro>
 					<op:res>
@@ -88,12 +87,8 @@
 										</sc:cell>
 									</sc:row>
 									<sc:row>
-										<sc:cell>
-											<sc:para xml:space="preserve">2</sc:para>
-										</sc:cell>
-										<sc:cell>
-											<sc:para xml:space="preserve">Modèle Conceptuel des Traitements (MCT)</sc:para>
-										</sc:cell>
+										<sc:cell/>
+										<sc:cell/>
 									</sc:row>
 									<sc:row>
 										<sc:cell>
@@ -134,7 +129,6 @@
 						</sp:txt>
 					</op:res>
 				</sp:intro>
-				<sp:courseUa sc:refUri="/Cours/mct/mct.xml"/>
 				<sp:div>
 					<op:ueDiv>
 						<op:ueDivM>
